@@ -1,0 +1,233 @@
+@import './bootstrap.min';
+
+
+body {
+	height: 3000px;
+	background: grey;
+}
+
+
+#fixed-top {
+	position: fixed;
+	display: none;
+	top: 100px;
+	font-size: 3em;
+	background-color: red;
+}
+.block {
+	display: block !important;
+}
+
+
+
+// .cbp-af-header {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     background: #f6f6f6;
+//     z-index: 10000;
+//     height: 230px;
+//     overflow: hidden;
+//     -webkit-transition: height 0.3s;
+//     -moz-transition: height 0.3s;
+//     transition: height 0.3s;
+// }
+
+// .cbp-af-header .cbp-af-inner {
+//     width: 90%;
+//     max-width: 69em;
+//     margin: 0 auto;
+//     padding: 0 1.875em;
+// }
+
+// .cbp-af-header h1,
+// .cbp-af-header nav {
+//     display: inline-block;
+//     position: relative;
+// }
+
+//  /* у нас все элементы шапки размещаются в одну линию, так что расположим их по центру родительского контейнера */
+// .cbp-af-header h1,
+// .cbp-af-header nav a {
+//     line-height: 230px;
+// }
+
+// .cbp-af-header h1 {
+//     text-transform: uppercase;
+//     color: #333;
+//     letter-spacing: 4px;
+//     font-size: 4em;
+//     margin: 0;
+//     float: left;
+// }
+
+// .cbp-af-header nav {
+//     float: right;
+// }
+
+// .cbp-af-header nav a {
+//     color: #aaa;
+//     font-weight: 700;
+//     margin: 0 0 0 20px;
+//     font-size: 1.4em;
+// }
+
+// .cbp-af-header nav a:hover {
+//     color: #333;
+// }
+
+// /* Изменение высоты */
+// .cbp-af-header h1,
+// .cbp-af-header nav a {
+//     -webkit-transition: all 0.3s;
+//     -moz-transition: all 0.3s;
+//     transition: all 0.3s;
+// }
+
+// .cbp-af-header.cbp-af-header-shrink {
+//     height: 90px;
+// }
+
+// .cbp-af-header.cbp-af-header-shrink h1,
+// .cbp-af-header.cbp-af-header-shrink nav a {
+//     line-height: 90px;
+// }
+
+// .cbp-af-header.cbp-af-header-shrink h1 {
+//     font-size: 2em;
+// }
+
+// /* Медиа запросы */
+// @media screen and (max-width: 55em) {
+
+//     .cbp-af-header .cbp-af-inner {
+//         width: 100%;
+//     }
+
+//     .cbp-af-header h1,
+//     .cbp-af-header nav {
+//         display: block;
+//         margin: 0 auto;
+//         text-align: center;
+//         float: none;
+//     }
+
+//     .cbp-af-header h1,
+//     .cbp-af-header nav a {
+//         line-height: 115px;
+//     }
+
+//     .cbp-af-header nav a {
+//         margin: 0 10px;
+//     }
+
+//     .cbp-af-header.cbp-af-header-shrink h1,
+//     .cbp-af-header.cbp-af-header-shrink nav a {
+//         line-height: 45px;
+//     }
+
+//     .cbp-af-header.cbp-af-header-shrink h1 {
+//         font-size: 2em;
+//     }
+
+//     .cbp-af-header.cbp-af-header-shrink nav a {
+//         font-size: 1em;
+//     }
+// }
+
+// @media screen and (max-width: 32.25em) {
+//     .cbp-af-header nav a {
+//         font-size: 1em;
+//     }
+// }
+
+// @media screen and (max-width: 24em) {
+//     .cbp-af-header nav a,
+//     .cbp-af-header.cbp-af-header-shrink nav a {
+//         line-height: 1;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+// .navbar-custom {
+//     background-color: #222;
+//     border-color: transparent;
+//     .navbar-brand {
+//     	color: #fed136;
+//     	&.active, &:active, &:focus, &:hover {
+//     		color: #fec503
+//     }
+//     .nav li a {
+//     	color: #fff;
+//     	text-transform: uppercase;
+//     	&:focus, &:hover {
+// 	    	color: #fed136;
+//     		outline: 0;
+// 	    }
+//     }
+//     .navbar-toggle {
+//     	color: #fff;
+//     	text-transform: uppercase;
+//     	background-color: #fed136;
+// 	    border-color: #fed136;
+// 	    font-size: 12px;
+// 	    &:focus, &:hover {
+// 	    	background-color: #fed136
+// 	    }
+//     }
+//     .navbar-collapse {
+// 	    border-color: rgba(255,255,255,.02)
+// 	}
+// }
+
+
+
+// .navbar-custom .navbar-nav>.active>a {
+//     border-radius: 0;
+//     color: #fff;
+//     background-color: #fed136
+// }
+
+// .navbar-custom .navbar-nav>.active>a:focus,.navbar-custom .navbar-nav>.active>a:hover {
+//     color: #fff;
+//     background-color: #fec503
+// }
+
+// @media (min-width: 768px) {
+//     .navbar-custom {
+//         background-color:transparent;
+//         padding: 25px 0;
+//         -webkit-transition: padding .3s;
+//         -moz-transition: padding .3s;
+//         transition: padding .3s;
+//         border: none;
+//     }
+
+//     .navbar-custom .navbar-brand {
+//         font-size: 2em;
+//         -webkit-transition: all .3s;
+//         -moz-transition: all .3s;
+//         transition: all .3s
+//     }
+
+//     .navbar-custom .navbar-nav>.active>a {
+//         border-radius: 3px
+//     }
+
+//     .navbar-custom.affix {
+//         background-color: #222;
+//         padding: 10px 0;
+//     }
+
+//     .navbar-custom.affix .navbar-brand {
+//         font-size: 1.5em
+//     }
+// }
