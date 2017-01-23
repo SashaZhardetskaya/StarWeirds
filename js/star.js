@@ -1,13 +1,15 @@
 		$(document).ready(function(){
   $(window).scroll(function(){
-    if (document.body.scrollTop >= 300) {
+    if (document.body.scrollTop >= 30) {
       $("#fixed-top").css({
-        'display':'block'
+        'display':'block',
+        'background': 'red'
       });
     };
-    if (document.body.scrollTop <= 300) {
+    if (document.body.scrollTop <= 30) {
       $("#fixed-top").css({
-        'display':'none'
+        'display':'block',
+        'background': 'green'
       });
     };
   });
