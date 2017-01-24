@@ -5505,10 +5505,14 @@ body {
     line-height: 25px; }
 
 .service {
-  height: 70vh;
-  background: url(../img/storm-starwars.jpg) 0% 100% no-repeat white;
+  width: 100%;
+  background-color: black;
   background-attachment: fixed;
-  background-size: 30% auto;
-  -webkit-background-size: 30% auto;
-  -moz-background-size: 30% auto;
-  -o-background-size: 30% auto; }
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  color: white; }
+  .service .re {
+    background: url(../img/wallpapers-space.jpg) 50% 50% no-repeat;
+    opacity: 0.6; }
