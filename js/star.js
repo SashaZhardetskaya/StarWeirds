@@ -9,7 +9,7 @@
     if (document.body.scrollTop <= 30) {
       $("#fixed-top").css({
         'display':'block',
-        'background': 'green'
+        'background': 'transparent'
       });
     };
   });

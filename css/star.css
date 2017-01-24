@@ -5465,8 +5465,12 @@ body {
   display: block;
   top: 0px;
   font-size: 3em;
-  background-color: green;
-  width: 100%; }
+  background-color: transparent;
+  width: 100%;
+  -webkit-transition-duration: 2s;
+  -o-transition-duration: 2s;
+  -moz-transition-duration: 2s;
+  transition-duration: 2s; }
   #fixed-top nav {
     width: 100%; }
   #fixed-top a {
@@ -5475,7 +5479,6 @@ body {
 .home {
   height: 100vh;
   background: url(../img/deathStar.jpg) center center no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -5483,17 +5486,14 @@ body {
 
 .home-page-content {
   position: relative;
-  top: 30%;
+  top: 40%;
   width: 100%;
   height: 70%;
-  margin: auto;
+  margin: 0 0 0 5%;
   max-width: 500px;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   color: white; }
-  .home-page-content .main-logo {
-    width: 200px;
-    height: auto; }
   .home-page-content h1 {
     font-family: "GothamProRegular";
     letter-spacing: 1px;
@@ -5503,3 +5503,12 @@ body {
     font-family: "GothamProRegular";
     font-size: 15px;
     line-height: 25px; }
+
+.service {
+  height: 70vh;
+  background: url(../img/storm-starwars.jpg) 0% 100% no-repeat white;
+  background-attachment: fixed;
+  background-size: 30% auto;
+  -webkit-background-size: 30% auto;
+  -moz-background-size: 30% auto;
+  -o-background-size: 30% auto; }
