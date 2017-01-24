@@ -8,7 +8,7 @@ body {
 }
 
 
-#fixed-top {
+#nav-main {
 	z-index: 2;
 	position: fixed;
 	display: block;
@@ -39,7 +39,7 @@ body {
 	// align-items: center;
 	height: 100vh;
 	background: url(../img/deathStar.jpg) center center no-repeat;
-	
+	background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -83,7 +83,8 @@ body {
 
 .service {
 	width: 100%;
-	
+	padding: 0;
+	background: url(../img/ParallaxStarsBg.png) center center no-repeat;
 	background-color: black;
 	background-attachment: fixed;
     background-size: cover;
@@ -91,8 +92,14 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     color: white;
-    .re {
-    	background: url(../img/wallpapers-space.jpg) 50% 50% no-repeat;
-	opacity: 0.6;
+    .stars-parallax {
+    	//width: 100%;
+    	//height: 100%;
+    	padding: 0;
+    	overflow: hidden;
+    	li {
+    		margin: 0 0 0 -200px;
+    		width: 100%;
+    	}
     }
 }
