@@ -23,10 +23,12 @@ $(document).ready(function(){ //services accardion
 	$('.service-icon a').on('click', function(){
 		// $('.service-icon a').css('outline','none');
 		// $(this).css('outline','19px solid #666');
-		$('.service-description').addClass('hidden').removeClass('visible');
+		
 		//.eq- оставляет только элемент с порядковым номером n
 		var n =$('.service-icon a').index(this);
-		var currentHasVisible = $('.service-description').eq(n).hasClass('visible')
+		var currentHasVisible = $('.service-description').eq(n).hasClass('visible');
+
+		$('.service-description').addClass('hidden').removeClass('visible');
 		if (currentHasVisible) {
 			$('.service-description').eq(n).removeClass('visible');
 			$('.service-description').eq(n).addClass('hidden');

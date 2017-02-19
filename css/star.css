@@ -7741,6 +7741,10 @@ body {
     .service .service-row .service-icon.icon-right {
       display: flex;
       justify-content: flex-end; }
+  .service .individual-service {
+    text-align: center; }
+    .service .individual-service a {
+      border: 5px solid red; }
   .service .stars-parallax {
     position: absolute;
     top: 0px;
@@ -7754,3 +7758,9 @@ body {
       top: 0;
       margin: 0 0 0 -200px;
       width: 100%; }
+
+.price {
+  height: 90vh;
+  text-align: center;
+  color: white;
+  background: url(../img/star-wars-darth-vader-wallpapers-high-definition.jpg) center center no-repeat; }

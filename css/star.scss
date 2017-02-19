@@ -121,6 +121,12 @@ body {
     		}
     	}
     }
+    .individual-service {
+        text-align: center;
+        a {
+            border: 5px solid red;
+        }
+    }
     .stars-parallax {
         position: absolute;
         top: 0px;
@@ -138,4 +144,11 @@ body {
     		width: 100%;
     	}
     }
+}
+
+.price {
+    height: 90vh;
+    text-align: center;
+    color: white;
+    background: url(../img/star-wars-darth-vader-wallpapers-high-definition.jpg) center center no-repeat;
 }
