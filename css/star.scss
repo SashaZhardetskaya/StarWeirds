@@ -7,6 +7,12 @@ body {
 	// background: url(../img/wallpapers-space.jpg) 100% 100% no-repeat;
 }
 
+.visible {
+    display: block;
+}
+.hidden {
+    display: none;
+}
 
 #nav-main {
 	z-index: 2;
@@ -97,8 +103,10 @@ body {
     	position: relative;
     	height: 100%;
     	.service-description {
-    		// display: block;
-            display: none;
+            // display: none;
+            // &.visible {
+            //     display: block;
+            // }
             &.description-right {
                 p {
                     text-align: right;

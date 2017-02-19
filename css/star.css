@@ -7669,6 +7669,12 @@ body {
   height: 3000px;
   background: grey; }
 
+.visible {
+  display: block; }
+
+.hidden {
+  display: none; }
+
 #nav-main {
   z-index: 2;
   position: fixed;
@@ -7730,10 +7736,8 @@ body {
     z-index: 2;
     position: relative;
     height: 100%; }
-    .service .service-row .service-description {
-      display: none; }
-      .service .service-row .service-description.description-right p {
-        text-align: right; }
+    .service .service-row .service-description.description-right p {
+      text-align: right; }
     .service .service-row .service-icon.icon-right {
       display: flex;
       justify-content: flex-end; }
