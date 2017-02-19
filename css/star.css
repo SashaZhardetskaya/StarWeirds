@@ -7726,14 +7726,22 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   color: white; }
-  .service .service-vertical-line {
-    position: absolute;
-    height: 100vh;
-    border-right: 5px solid white; }
+  .service .service-row {
+    position: relative;
+    height: 100%; }
+    .service .service-row .service-description {
+      display: block; }
+      .service .service-row .service-description.description-right p {
+        text-align: right; }
+    .service .service-row .service-icon.icon-right {
+      display: flex;
+      justify-content: flex-end; }
   .service .stars-parallax {
     width: 100%;
     padding: 0;
     overflow: hidden; }
+    .service .stars-parallax ul {
+      position: absolute; }
     .service .stars-parallax li {
       position: relative;
       top: 0;
