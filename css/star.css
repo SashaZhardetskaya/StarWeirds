@@ -7727,16 +7727,19 @@ body {
   -o-background-size: cover;
   color: white; }
   .service .service-row {
+    z-index: 2;
     position: relative;
     height: 100%; }
     .service .service-row .service-description {
-      display: block; }
+      display: none; }
       .service .service-row .service-description.description-right p {
         text-align: right; }
     .service .service-row .service-icon.icon-right {
       display: flex;
       justify-content: flex-end; }
   .service .stars-parallax {
+    position: absolute;
+    top: 0px;
     width: 100%;
     padding: 0;
     overflow: hidden; }
