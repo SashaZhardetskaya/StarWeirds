@@ -7781,3 +7781,7 @@ body {
 .contacts {
   height: 500px;
   background: url(../img/kWVaXH.jpg) center center no-repeat; }
+  .contacts .user-contact {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none; }

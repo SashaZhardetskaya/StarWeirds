@@ -178,4 +178,9 @@ body {
 .contacts {
     height: 500px;
     background: url(../img/kWVaXH.jpg) center center no-repeat;
+    .user-contact {
+        display: block;
+        background-color: transparentize(white,.9);
+        border: none;
+    }
 }
