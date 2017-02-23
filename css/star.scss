@@ -17,7 +17,6 @@ body {
 #nav-main {
 	z-index: 2;
 	position: fixed;
-	display: block;
 	top: 0px;
 	font-size: 3em;
 	background-color: transparent;
@@ -32,6 +31,12 @@ body {
 	a {
 		float: right;
 	}
+    &.nav-top {
+        background: red;
+    }
+    &.nav-down {
+        background: transparent;
+    }
 }
 // .block {
 // 	display: block !important;

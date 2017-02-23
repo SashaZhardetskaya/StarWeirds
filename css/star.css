@@ -7678,7 +7678,6 @@ body {
 #nav-main {
   z-index: 2;
   position: fixed;
-  display: block;
   top: 0px;
   font-size: 3em;
   background-color: transparent;
@@ -7691,6 +7690,10 @@ body {
     width: 100%; }
   #nav-main a {
     float: right; }
+  #nav-main.nav-top {
+    background: red; }
+  #nav-main.nav-down {
+    background: transparent; }
 
 .home {
   height: 100vh;

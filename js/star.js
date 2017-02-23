@@ -4,16 +4,16 @@ $(document).ready(function(){
 	//top navigation
 	$(window).scroll(function(){
 		if (document.body.scrollTop >= 30) {
-			$("#nav-main").css({
-				'display':'block',
-        		'background': 'red'
-        	});
+			// $("#nav-main").css({
+   //      		'background': 'red'
+   //      	});
+        	$("#nav-main").addClass('nav-top').removeClass('nav-down');
 		};
 		if (document.body.scrollTop <= 30) {
-			$("#nav-main").css({
-				'display':'block',
-				'background': 'transparent'
-			});
+			// $("#nav-main").css({
+			// 	'background': 'transparent'
+			// });
+			$("#nav-main").addClass('nav-down').removeClass('nav-top');
 		};
 	});
 });
@@ -27,7 +27,6 @@ $(document).ready(function(){ //services accardion
 		//.eq- оставляет только элемент с порядковым номером n
 		var n =$('.service-icon a').index(this);
 		var currentHasVisible = $('.service-description').eq(n).hasClass('visible');
-
 		$('.service-description').addClass('hidden').removeClass('visible');
 		if (currentHasVisible) {
 			$('.service-description').eq(n).removeClass('visible');
