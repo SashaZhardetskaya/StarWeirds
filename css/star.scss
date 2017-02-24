@@ -1,5 +1,9 @@
 @import './bootstrap.min';
-@import './font-awesome.min';
+// @import './font-awesome.min';
+// @import 'font-awesome-4.7.0/css/font-awesome.min';
+// @import 'font-awesome-4.7.0/scss/font-awesome';
+// @import '../font-awesome-4.7.0/css/font-awesome.min';
+@import 'font-awesome-4.7.0/scss/font-awesome';
 
 body {
 	height: 3000px;
@@ -15,28 +19,46 @@ body {
 }
 
 #nav-main {
-	z-index: 2;
+	z-index: 4;
 	position: fixed;
 	top: 0px;
-	font-size: 3em;
-	background-color: transparent;
 	width: 100%;
+    font-size: 1.6em;
+    color: white;
 	-webkit-transition-duration: 2s;
     -o-transition-duration: 2s;
     -moz-transition-duration: 2s;
     transition-duration: 2s;
-	nav {
-		width: 100%;
+    nav {
+        height: 100%;
+        width: 100%;
+        a {
+            height: 100%;
+        }
 	}
-	a {
-		float: right;
-	}
-    &.nav-top {
-        background: red;
+    .main-logo {
+        img {
+            height: 70px;
+            width: auto;
+            -webkit-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+        }
     }
     &.nav-down {
         background: transparent;
     }
+    &.nav-top {
+        background-color: transparentize(grey,.1);
+        .main-logo {
+            img {
+                height: 50px;
+                width: auto;
+            }
+        }
+    }
+    
 }
 // .block {
 // 	display: block !important;
