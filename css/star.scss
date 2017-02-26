@@ -6,8 +6,6 @@
 @import 'font-awesome-4.7.0/scss/font-awesome';
 
 body {
-	height: 3000px;
-	background: grey;
 	// background: url(../img/wallpapers-space.jpg) 100% 100% no-repeat;
 }
 
@@ -204,5 +202,51 @@ body {
         display: block;
         background-color: transparentize(white,.9);
         border: none;
+    }
+    .choose-service-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        background: transparent;
+        color: white;
+        .input-checkbox {
+            display: none;
+            & + span {
+                box-sizing: border-box;
+                width: 30px;
+                height: 30px;
+                border: solid #dae4eb 1px;
+                box-shadow: 2px 2px 10px -5px #c1cfd9 inset;
+                background: transparentize(white,.6);
+                cursor: pointer;
+            }
+            &:checked + span {
+                background: transparentize(white,.6);
+                position: relative;
+            }
+            &:checked + span:before {
+                content: '';
+            position: absolute; 
+            left: 4px;
+            top: 13px;   
+            width: 12px;
+            height: 5px;
+            background: #8b2121;
+            -webkit-transform: rotate(50deg);
+            transform: rotate(50deg);
+            }
+            &:checked + span:after {
+                content: '';
+            position: absolute; 
+            left: 8px;
+            top: 11px;
+            width: 19px;
+            height: 5px;
+            background: #8b2121;
+            -webkit-transform: rotate(-50deg);
+            transform: rotate(-45deg);
+            }
+        }
     }
 }
