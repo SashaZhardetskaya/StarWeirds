@@ -7866,15 +7866,30 @@ button.close {
     z-index: 2;
     position: relative;
     height: 100%; }
+    .service .service-row .service-name {
+      color: white;
+      text-decoration: none;
+      cursor: pointer; }
     .service .service-row .service-description.description-right p {
       text-align: right; }
-    .service .service-row .service-icon.icon-right {
-      display: flex;
-      justify-content: flex-end; }
+    .service .service-row .service-icon {
+      cursor: pointer; }
+      .service .service-row .service-icon.icon-right {
+        display: flex;
+        justify-content: flex-end; }
   .service .individual-service {
-    text-align: center; }
+    text-align: center;
+    margin: 35px 0 50px 0; }
+    .service .individual-service h2 {
+      margin: 35px 0 35px 0; }
     .service .individual-service a {
-      border: 5px solid red; }
+      padding: 15px 100px 15px 100px;
+      background-color: black;
+      border: solid rgba(255, 0, 0, 0.3);
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer; }
   .service .stars-parallax {
     position: absolute;
     top: 0px;
@@ -7905,35 +7920,69 @@ button.close {
     position: relative;
     top: 0;
     width: 100%; }
+  .questions .yoda-parallax .yoda-img {
+    width: 70%;
+    height: auto; }
+  .questions .question-form {
+    color: white;
+    background: transparent;
+    border: none;
+    border-radius: 0px; }
+    .questions .question-form .question {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 0%;
+      color: white; }
 
 .contacts {
   height: 100%;
-  background: url(../img/kWVaXH.jpg) center center no-repeat; }
+  background: url(../img/kWVaXH.jpg) center 110% no-repeat black;
+  color: white; }
+  .contacts .our-contact-title {
+    margin: 45px 0 0 0;
+    font-size: 20px;
+    text-align: center; }
+  .contacts .our-contacts-list {
+    margin: 25px 0 45px 0;
+    list-style-type: none;
+    text-align: center; }
+    .contacts .our-contacts-list li {
+      display: inline; }
+      .contacts .our-contacts-list li .our-contact-name {
+        margin: 0 5px 0 0;
+        font-size: 15px;
+        text-transform: uppercase; }
+      .contacts .our-contacts-list li .our-contact-value {
+        margin: 0 15% 0 0;
+        font-size: 20px;
+        font-weight: 100; }
   .contacts .user-contact {
     display: block;
+    padding: 10px 70px 10px 5px;
+    margin: 0 0 10px 0;
     background-color: rgba(255, 255, 255, 0.1);
     border: none; }
-  .contacts .choose-service-form {
+  .contacts .choose-service-form, .contacts .choose-contact-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
     background: transparent;
     color: white; }
-    .contacts .choose-service-form .input-checkbox {
+    .contacts .choose-service-form .input-checkbox, .contacts .choose-contact-form .input-checkbox {
       display: none; }
-      .contacts .choose-service-form .input-checkbox + span {
+      .contacts .choose-service-form .input-checkbox + span, .contacts .choose-contact-form .input-checkbox + span {
         box-sizing: border-box;
         width: 30px;
         height: 30px;
         border: solid #dae4eb 1px;
         box-shadow: 2px 2px 10px -5px #c1cfd9 inset;
-        background: rgba(255, 255, 255, 0.4);
+        background: rgba(255, 255, 255, 0.1);
         cursor: pointer; }
-      .contacts .choose-service-form .input-checkbox:checked + span {
-        background: rgba(255, 255, 255, 0.4);
+      .contacts .choose-service-form .input-checkbox:checked + span, .contacts .choose-contact-form .input-checkbox:checked + span {
+        background: rgba(255, 255, 255, 0.1);
         position: relative; }
-      .contacts .choose-service-form .input-checkbox:checked + span:before {
+      .contacts .choose-service-form .input-checkbox:checked + span:before, .contacts .choose-contact-form .input-checkbox:checked + span:before {
         content: '';
         position: absolute;
         left: 4px;
@@ -7943,7 +7992,7 @@ button.close {
         background: #8b2121;
         -webkit-transform: rotate(50deg);
         transform: rotate(50deg); }
-      .contacts .choose-service-form .input-checkbox:checked + span:after {
+      .contacts .choose-service-form .input-checkbox:checked + span:after, .contacts .choose-contact-form .input-checkbox:checked + span:after {
         content: '';
         position: absolute;
         left: 8px;
@@ -7953,3 +8002,14 @@ button.close {
         background: #8b2121;
         -webkit-transform: rotate(-50deg);
         transform: rotate(-45deg); }
+  .contacts .contact-textarea {
+    display: block;
+    background: rgba(255, 255, 255, 0.1); }
+  .contacts .submit-button {
+    display: flex;
+    justify-content: center; }
+    .contacts .submit-button input {
+      padding: 15px 100px 15px 100px;
+      margin: 55px 0 250px 0;
+      background-color: black;
+      border: solid rgba(255, 0, 0, 0.3); }

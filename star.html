@@ -60,7 +60,7 @@
           <div class="row service-row service-row-first">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 service-icon icon-right">
               <a>
-                <span>PPC</span>
+                <span class="service-name">PPC</span>
                 <img src="./img/icon_clone.png" alt="">
               </a>
             </div>
@@ -79,14 +79,14 @@
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 service-icon">
               <a>
                 <img src="./img/icon_death_star.png" alt="">
-                <span>PPC</span>
+                <span class="service-name">PPC</span>
               </a>
             </div>
           </div>
           <div class="row service-row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 service-icon icon-right">
               <a>
-                <span>PPC</span>
+                <span class="service-name">PPC</span>
                 <img src="./img/icon_darth_vader.png" alt="">
               </a>
             </div>
@@ -105,14 +105,14 @@
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 service-icon">
               <a>
                 <img src="./img/r2d2.png" alt="">
-                <span>PPC</span>
+                <span class="service-name">PPC</span>
               </a>
             </div>
           </div>
           <div class="row service-row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 service-icon icon-right">
               <a>
-                <span>PPC</span>
+                <span class="service-name">PPC</span>
                 <img src="./img/at-at.png" alt="">
               </a>
             </div>
@@ -131,7 +131,7 @@
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 service-icon">
               <a>
                 <img src="./img/falcon.png" alt="">
-                <span>PPC</span>
+                <span class="service-name">PPC</span>
               </a>
             </div>
           </div>
@@ -167,13 +167,13 @@
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
           <ul id="scene1" class="yoda-parallax">
-            <li class="layer" data-depth="0.40"><img src="./img/mp-yodaspecies.png"></li>
+            <li class="layer" data-depth="0.40"><img src="./img/mp-yodaspecies.png" class="yoda-img"></li>
           </ul>
         </div>
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
+            <div class="panel panel-default question-form">
+              <div class="panel-heading question" role="tab" id="headingOne">
                 <h4 class="panel-title">
                   <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                     А нам это поможет?
@@ -186,8 +186,8 @@
                 </div>
               </div>
             </div>
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingTwo">
+            <div class="panel panel-default question-form">
+              <div class="panel-heading question" role="tab" id="headingTwo">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     А нам это поможет?
@@ -200,8 +200,8 @@
                 </div>
               </div>
             </div>
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingThree">
+            <div class="panel panel-default question-form">
+              <div class="panel-heading question" role="tab" id="headingThree">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     А нам это поможет? #3
@@ -232,32 +232,62 @@
     <div class="container-fluid contacts">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <p>Наши контакты:</p>
-          <ul>
-            <li>phone</li>
-            <li>e-mail</li>
-            <li>skype</li>
+          <p class="our-contact-title">Наши контакты:</p>
+          <ul class="our-contacts-list">
+            <li>
+              <span class="our-contact-name">phone</span>
+              <span class="our-contact-value">+38(093)91-99-002</span>
+            </li>
+            <li>
+              <span class="our-contact-name">e-mail</span>
+              <span class="our-contact-value">starwierds@gmail.com</span></li>
+            <li>
+              <span class="our-contact-name">skype</span>
+              <span class="our-contact-value">star.wierds</span></li>
           </ul>
         </div>
         <form action="">
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <p>Заполните данные для обратной связи:</p>
             <input type="text" required placeholder="Имя:" class="user-contact">
             <input type="text" required placeholder="Телефон:" class="user-contact">
             <input type="text" placeholder="E-mail:" class="user-contact">
             <span>Предпочтительный способ связи:</span>
-            <input type="checkbox"><span>Телефон</span>
-            <input type="checkbox"><span>Мейл</span>
-            <input type="checkbox"><span>Skype</span>
+            <br>
+            <label>
+              <div class="choose-contact-form">
+                <p>Телефон</p>
+                <input type="checkbox" class="related-post__input input-checkbox">
+                <span></span>
+              </div>
+            </label>
+            <br>
+            <label>
+              <div class="choose-contact-form">
+                <p>Мейл</p>
+                <input type="checkbox" class="related-post__input input-checkbox">
+                <span></span>
+              </div>
+            </label>
+            <br>
+            <label>
+              <div class="choose-contact-form">
+                <p>Skype</p>
+                <input type="checkbox" class="related-post__input input-checkbox">
+                <span></span>
+              </div>
+            </label>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
             <span>Какие услуги Вам интересны:</span>
+            <br>
             <label>
               <div class="choose-service-form">
                 <p>Создание лендинга</p>
                 <input type="checkbox" class="related-post__input input-checkbox">
                 <span></span>
               </div>
-            </label>
+            </label><br>
             <label>
               <div class="choose-service-form">
                 <p>Контекстная реклама</p>
@@ -265,6 +295,7 @@
                 <span></span>
               </div>
             </label>
+            <br>
             <label>
               <div class="choose-service-form">
                 <p>Продвижение в инстаграмм</p>
@@ -272,6 +303,7 @@
                 <span></span>
               </div>
             </label>
+            <br>
             <label>
               <div class="choose-service-form">
                 <p>Создание лендинга</p>
@@ -279,6 +311,7 @@
                 <span></span>
               </div>
             </label>
+            <br>
             <label>
               <div class="choose-service-form">
                 <p>Создание лендинга</p>
@@ -286,6 +319,7 @@
                 <span></span>
               </div>
             </label>
+            <br>
             <label>
               <div class="choose-service-form">
                 <p>Создание лендинга</p>
@@ -293,9 +327,9 @@
                 <span></span>
               </div>
             </label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="" cols="30" rows="10" class="contact-textarea" placeholder="Если у Вас есть комментарий, оставьте его тут:"></textarea>
           </div>
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 submit-button">
             <input type="submit" value="Отправить">
           </div>
         </form>
