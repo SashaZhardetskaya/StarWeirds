@@ -7,13 +7,13 @@ $(document).ready(function(){
 			// $("#nav-main").css({
    //      		'background': 'red'
    //      	});
-        	$("#nav-main").addClass('nav-top').removeClass('nav-down');
+        	$("#nav-main").addClass('nav-down').removeClass('nav-top');
 		};
 		if (document.body.scrollTop <= 30) {
 			// $("#nav-main").css({
 			// 	'background': 'transparent'
 			// });
-			$("#nav-main").addClass('nav-down').removeClass('nav-top');
+			$("#nav-main").addClass('nav-top').removeClass('nav-down');
 		};
 	});
 });
@@ -36,4 +36,35 @@ $(document).ready(function(){ //services accardion
 			$('.service-description').eq(n).addClass('visible');
 		}
 	});
+});
+
+/* ANCHORS	*/
+
+$(document).ready(function(){  //anchors
+$('a .nav-email-icon').click(function(){
+	var contactsIcon = $('.contacts').offset().top;
+	$('body').animate({scrollTop:contactsIcon},880);
+});
+$('a .nav-phone-icon').click(function(){
+	var contactsIcon = $('.contacts').offset().top;
+	$('body').animate({scrollTop:contactsIcon},880);
+});
+
+$('.nav-to-service').click(function(){
+	var service = $('.service').offset().top;
+	$('body').animate({scrollTop:service},880);
+});
+$('.nav-to-price').click(function(){
+	var price = $('.price').offset().top;
+	$('body').animate({scrollTop:price},880);
+});
+$('.nav-to-questions').click(function(){
+	var questions = $('.questions').offset().top;
+	$('body').animate({scrollTop:questions},880);
+});
+$('.nav-to-contact').click(function(){
+	var contacts = $('.contacts').offset().top;
+	$('body').animate({scrollTop:contacts},880);
+});
+
 });
