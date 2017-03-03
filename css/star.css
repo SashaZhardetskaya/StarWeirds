@@ -7785,6 +7785,9 @@ button.close {
   overflow: visible;
   clip: auto; }
 
+body {
+  position: relative; }
+
 .visible {
   display: block; }
 
