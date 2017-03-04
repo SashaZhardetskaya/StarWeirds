@@ -7917,6 +7917,8 @@ body {
         display: flex;
         justify-content: flex-end; }
   .service .individual-service {
+    position: relative;
+    z-index: 2;
     text-align: center;
     margin: 35px 0 50px 0; }
     .service .individual-service h2 {
