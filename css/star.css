@@ -7823,6 +7823,13 @@ body {
     padding: 0 30px 0 45px; }
     #nav-main .nav-links a {
       color: white; }
+      #nav-main .nav-links a:hover, #nav-main .nav-links a:active, #nav-main .nav-links a:focus {
+        color: rgba(255, 0, 0, 0.7);
+        font-size: 25px;
+        -webkit-transition-duration: 0.7s;
+        -o-transition-duration: 0.7s;
+        -moz-transition-duration: 0.7s;
+        transition-duration: 0.7s; }
   #nav-main .nav-contacts {
     padding: 0 0 0 30%;
     font-size: 18px;
@@ -7839,7 +7846,7 @@ body {
   #nav-main.nav-top {
     background: transparent; }
   #nav-main.nav-down {
-    background-color: rgba(128, 128, 128, 0.9); }
+    background-color: rgba(34, 38, 43, 0.9); }
     #nav-main.nav-down .main-logo img {
       height: 50px;
       width: auto; }
@@ -7892,7 +7899,8 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  color: white; }
+  color: white;
+  overflow: hidden; }
   .service .service-row {
     z-index: 2;
     position: relative;
