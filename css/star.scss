@@ -6,8 +6,12 @@
 @import 'font-awesome-4.7.0/scss/font-awesome';
 
 body {
-    position: relative;
-	// background: url(../img/wallpapers-space.jpg) 100% 100% no-repeat;
+	background: url(../img/main-background.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .visible {
@@ -162,8 +166,6 @@ body {
 .service {
 	width: 100%;
 	padding: 0;
-	background: url(../img/ParallaxStarsBg.png) center center no-repeat;
-	background-color: black;
 	background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
@@ -181,23 +183,13 @@ body {
             cursor: pointer;
         }
     	.service-description {
-            // display: none;
-            // &.visible {
-            //     display: block;
-            // }
-            &.description-right {
-                p {
-                    text-align: right;
-                }
-            }
+            display: block;
+            text-align: center;
     	}
     	.service-icon{
+			display: flex;
+			justify-content: center;
             cursor: pointer;
-    		&.icon-right {
-    			display: flex;
-    			justify-content: flex-end;
-    			// align-items: center;
-    		}
     	}
     }
     .individual-service {
@@ -218,51 +210,19 @@ body {
             cursor: pointer;
         }
     }
-    .stars-parallax {
-        position: absolute;
-        top: 0px;
-    	width: 100%;
-    	//height: 100%;
-    	padding: 0;
-    	overflow: hidden;
-    	ul {
-    		position: absolute;
-    	}
-    	li {
-    		position: relative;
-    		top: 0;
-    		margin: 0 0 0 -200px;
-    		width: 100%;
-    	}
-    }
 }
 
 .price {
     height: 90vh;
     text-align: center;
     color: white;
-    background: url(../img/star-wars-darth-vader-wallpapers-high-definition.jpg) center center no-repeat;
+    // background: url(../img/star-wars-darth-vader-wallpapers-high-definition.jpg) center center no-repeat;
 }
 
 
 .questions {
     width: 100%;
     height: 100%;
-    background: black;
-    .yoda-parallax {
-        ul {
-            position: absolute;
-        }
-        li {
-            position: relative;
-            top: 0;
-            width: 100%;
-        }
-        .yoda-img {
-            width: 70%;
-            height: auto;
-        }
-    }
     .question-form {
         color: white;
         background: transparent;
@@ -279,7 +239,7 @@ body {
 
 .contacts {
     height: 100%;
-    background: url(../img/kWVaXH.jpg) center 110% no-repeat black;
+    // background: url(../img/kWVaXH.jpg) center 110% no-repeat black;
     color: white;
     .our-contact-title {
         margin: 45px 0 0 0;
