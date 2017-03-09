@@ -4,6 +4,23 @@
 // @import 'font-awesome-4.7.0/scss/font-awesome';
 // @import '../font-awesome-4.7.0/css/font-awesome.min';
 @import 'font-awesome-4.7.0/scss/font-awesome';
+@font-face {
+  font-family: 'SF Distant Galaxy Outline';
+  src: url('SF Distant Galaxy Outline.eot');
+  src: url('SF Distant Galaxy Outline.woff2') format('woff2'),
+       url('SF Distant Galaxy Outline.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFDistantGalaxyOutline';
+  src: url('SFDistantGalaxyOutline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 body {
 	background: url(../img/main-background.jpg) center center no-repeat;
@@ -139,16 +156,14 @@ body {
 	text-align: left;
 	color: white;
     h1 {
-    	font-family: "GothamProRegular";
-    	letter-spacing: 1px;
+        color: #f9d944;
+    	font-family: "SF Distant Galaxy Outline";
+        font-size: 50px;
     	font-weight: 200;
-    	line-height: 27px;
+    	line-height: 57px;
     }
-    p {
-    	font-family: "GothamProRegular";
-    	// letter-spacing: 1px;
-    	font-size: 15px;
-    	line-height: 25px;
+    .home-text-power {
+        font-size: 90px;
     }
 }
 

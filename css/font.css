@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'SF Distant Galaxy Outline';
+  src: url('SF Distant Galaxy Outline.eot');
+  src: url('SF Distant Galaxy Outline.woff2') format('woff2'),
+       url('SF Distant Galaxy Outline.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFDistantGalaxyOutline';
+  src: url('SFDistantGalaxyOutline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
