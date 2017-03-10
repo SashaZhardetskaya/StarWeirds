@@ -207,22 +207,44 @@ body {
             cursor: pointer;
     	}
     }
-    .individual-service {
+    .send-request {
         position: relative;
         z-index: 2;
         text-align: center;
         margin: 35px 0 50px 0;
-        h2 {
-            margin: 35px 0 35px 0;
-        }
         a {
             padding: 15px 100px 15px 100px;
-            background-color: black;
             border: solid transparentize(red,.7);
             color: white;
             text-transform: uppercase;
             text-decoration: none;
             cursor: pointer;
+        }
+        .send-request-disign {
+            &.circle {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background: #f9d944;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                &.circle-left {
+                    position: relative;
+                    right: 12%;
+                }
+                &.circle-right {
+                    position: relative;
+                    right: -12%;
+                }
+            }
+            &.horizontal-line {
+                display: inline-block;
+                position: relative;
+                top: 15px;
+                width: 11%;
+                border-color: #f9d944;
+            }
         }
     }
 }

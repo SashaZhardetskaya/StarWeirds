@@ -66,7 +66,7 @@ $('.nav-to-contact').click(function(){
 	var contacts = $('.contacts').offset().top;
 	$('body').animate({scrollTop:contacts},880);
 });
-$('.individual-service a').click(function(){
+$('.send-request a').click(function(){
 	var contacts = $('.contacts').offset().top;
 	$('body').animate({scrollTop:contacts},880);
 });

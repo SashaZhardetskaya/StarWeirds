@@ -7930,21 +7930,38 @@ body {
       display: flex;
       justify-content: center;
       cursor: pointer; }
-  .service .individual-service {
+  .service .send-request {
     position: relative;
     z-index: 2;
     text-align: center;
     margin: 35px 0 50px 0; }
-    .service .individual-service h2 {
-      margin: 35px 0 35px 0; }
-    .service .individual-service a {
+    .service .send-request a {
       padding: 15px 100px 15px 100px;
-      background-color: black;
       border: solid rgba(255, 0, 0, 0.3);
       color: white;
       text-transform: uppercase;
       text-decoration: none;
       cursor: pointer; }
+    .service .send-request .send-request-disign.circle {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #f9d944;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%; }
+      .service .send-request .send-request-disign.circle.circle-left {
+        position: relative;
+        right: 12%; }
+      .service .send-request .send-request-disign.circle.circle-right {
+        position: relative;
+        right: -12%; }
+    .service .send-request .send-request-disign.horizontal-line {
+      display: inline-block;
+      position: relative;
+      top: 15px;
+      width: 11%;
+      border-color: #f9d944; }
 
 .price {
   height: 90vh;
