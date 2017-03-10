@@ -7936,32 +7936,52 @@ body {
     text-align: center;
     margin: 35px 0 50px 0; }
     .service .send-request a {
-      padding: 15px 100px 15px 100px;
-      border: solid rgba(255, 0, 0, 0.3);
+      padding: 30px 100px 30px 100px;
       color: white;
       text-transform: uppercase;
       text-decoration: none;
       cursor: pointer; }
-    .service .send-request .send-request-disign.circle {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      background: #f9d944;
-      -moz-border-radius: 50%;
-      -webkit-border-radius: 50%;
-      border-radius: 50%; }
-      .service .send-request .send-request-disign.circle.circle-left {
+      .service .send-request a:active, .service .send-request a:hover, .service .send-request a:focus {
+        color: #f9d944; }
+    .service .send-request .send-request-disign {
+      margin: 0px; }
+      .service .send-request .send-request-disign.circle {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #f9d944;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
+        .service .send-request .send-request-disign.circle.circle-left {
+          position: relative;
+          right: 12%; }
+        .service .send-request .send-request-disign.circle.circle-right {
+          position: relative;
+          right: -12%; }
+      .service .send-request .send-request-disign.horizontal-line {
+        display: inline-block;
         position: relative;
-        right: 12%; }
-      .service .send-request .send-request-disign.circle.circle-right {
+        top: -4px;
+        width: 17%;
+        border-color: #f9d944; }
+        .service .send-request .send-request-disign.horizontal-line.line-right {
+          right: 5.3%; }
+        .service .send-request .send-request-disign.horizontal-line.line-left {
+          left: 5.3%; }
+      .service .send-request .send-request-disign.left-side-block, .service .send-request .send-request-disign.right-side-block {
+        display: inline-block;
         position: relative;
-        right: -12%; }
-    .service .send-request .send-request-disign.horizontal-line {
-      display: inline-block;
-      position: relative;
-      top: 15px;
-      width: 11%;
-      border-color: #f9d944; }
+        top: 33px;
+        height: 80px;
+        width: 4%;
+        border: solid 1px #f9d944; }
+      .service .send-request .send-request-disign.left-side-block {
+        border-right: transparent;
+        left: 4%; }
+      .service .send-request .send-request-disign.right-side-block {
+        border-left: transparent;
+        right: 4%; }
 
 .price {
   height: 90vh;
