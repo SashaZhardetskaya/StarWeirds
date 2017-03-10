@@ -7920,16 +7920,14 @@ body {
     position: relative;
     height: 100%; }
     .service .service-row .service-name {
+      display: flex;
+      justify-content: center;
       color: white;
       text-decoration: none;
       cursor: pointer; }
     .service .service-row .service-description {
       display: block;
       text-align: center; }
-    .service .service-row .service-icon {
-      display: flex;
-      justify-content: center;
-      cursor: pointer; }
 
 .send-request {
   position: relative;

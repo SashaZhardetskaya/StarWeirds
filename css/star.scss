@@ -193,6 +193,8 @@ body {
     	position: relative;
     	height: 100%;
         .service-name {
+            display: flex;
+            justify-content: center;
             color: white;
             text-decoration: none;
             cursor: pointer;
@@ -200,11 +202,6 @@ body {
     	.service-description {
             display: block;
             text-align: center;
-    	}
-    	.service-icon{
-			display: flex;
-			justify-content: center;
-            cursor: pointer;
     	}
     }
 }
