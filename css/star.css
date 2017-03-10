@@ -7828,13 +7828,6 @@ body {
     width: 100%; }
     #nav-main nav a {
       height: 100%; }
-  #nav-main .main-logo img {
-    height: 70px;
-    width: auto;
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    transition-duration: 1s; }
   #nav-main .nav-links {
     display: flex;
     justify-content: space-between;
@@ -7855,28 +7848,15 @@ body {
     -o-transition-duration: 1s;
     -moz-transition-duration: 1s;
     transition-duration: 1s; }
-  #nav-main .nav-contact-us {
-    padding: 0 0 0 20%;
-    font-size: 18px; }
-    #nav-main .nav-contact-us a {
-      display: inline-block;
-      color: white; }
   #nav-main.nav-top {
     background: transparent; }
   #nav-main.nav-down {
     background-color: rgba(34, 38, 43, 0.9); }
-    #nav-main.nav-down .main-logo img {
-      height: 50px;
-      width: auto; }
     #nav-main.nav-down .nav-contacts {
       padding: 0 0 0 30%;
       font-size: 15px; }
       #nav-main.nav-down .nav-contacts .nav-email-contact {
         display: none; }
-    #nav-main.nav-down .nav-contact-us span {
-      display: none; }
-    #nav-main.nav-down .nav-contact-us br {
-      display: none; }
 
 .home {
   height: 100vh;
