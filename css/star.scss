@@ -207,72 +207,73 @@ body {
             cursor: pointer;
     	}
     }
-    .send-request {
-        position: relative;
-        z-index: 2;
-        text-align: center;
-        margin: 35px 0 50px 0;
-        a {
-            padding: 30px 100px 30px 100px;
-            color: white;
-            text-transform: uppercase;
-            text-decoration: none;
-            cursor: pointer;
-            &:active, &:hover, &:focus {
-                color: #f9d944;
+}
+.send-request {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin: 35px 0 50px 0;
+    a {
+        padding: 30px 100px 30px 100px;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        &:active, &:hover, &:focus {
+            color: #f9d944;
+        }
+    }
+    .send-request-disign {
+        margin: 0px;
+        &.circle {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #f9d944;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            &.circle-left {
+                position: relative;
+                right: 12%;
+            }
+            &.circle-right {
+                position: relative;
+                right: -12%;
             }
         }
-        .send-request-disign {
-            margin: 0px;
-            &.circle {
-                display: inline-block;
-                width: 10px;
-                height: 10px;
-                background: #f9d944;
-                -moz-border-radius: 50%;
-                -webkit-border-radius: 50%;
-                border-radius: 50%;
-                &.circle-left {
-                    position: relative;
-                    right: 12%;
-                }
-                &.circle-right {
-                    position: relative;
-                    right: -12%;
-                }
+        &.horizontal-line {
+            display: inline-block;
+            position: relative;
+            top: -4px;
+            width: 17%;
+            border-color: #f9d944;
+            &.line-right {
+                right: 5.3%;
             }
-            &.horizontal-line {
-                display: inline-block;
-                position: relative;
-                top: -4px;
-                width: 17%;
-                border-color: #f9d944;
-                &.line-right {
-                    right: 5.3%;
-                }
-                &.line-left {
-                    left: 5.3%;
-                }
+            &.line-left {
+                left: 5.3%;
             }
-            &.left-side-block, &.right-side-block {
-                display: inline-block;
-                position: relative;
-                top: 33px;
-                height: 80px;
-                width: 4%;
-                border: solid 1px #f9d944;
-            }
-            &.left-side-block {
-                border-right: transparent;
-                left: 4%;
-            }
-            &.right-side-block {
-                border-left: transparent;
-                right: 4%;
-            }
+        }
+        &.left-side-block, &.right-side-block {
+            display: inline-block;
+            position: relative;
+            top: 33px;
+            height: 80px;
+            width: 4%;
+            border: solid 1px #f9d944;
+        }
+        &.left-side-block {
+            border-right: transparent;
+            left: 4%;
+        }
+        &.right-side-block {
+            border-left: transparent;
+            right: 4%;
         }
     }
 }
+
 
 .price {
     height: 90vh;
@@ -302,6 +303,8 @@ body {
 .contacts {
     height: 100%;
     // background: url(../img/kWVaXH.jpg) center 110% no-repeat black;
+    width: 100%;
+    padding: 0;
     color: white;
     .our-contact-title {
         margin: 45px 0 0 0;
@@ -386,14 +389,17 @@ body {
         display: block;
         background: transparentize(white,.9);
     }
-    .submit-button {
-        display: flex;
-        justify-content: center;
-        input {
-            padding: 15px 100px 15px 100px;
-            margin: 55px 0 250px 0;
-            background-color: black;
-            border: solid transparentize(red,.7);
+    .send-request input {
+        background: transparent;
+        border: none;
+        padding: 30px 8% 30px 8%;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
+        outline:none;
+        &:active, &:hover, &:focus {
+            color: #f9d944;
         }
     }
 }
