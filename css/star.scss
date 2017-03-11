@@ -90,10 +90,12 @@ body {
             }
         }
     }
-    .send-request {
+    .send-request-nav {
         position: relative;
         text-align: center;
         font-size: 12px;
+        margin: 35px 0 30px 0;
+        @include transition-duration (0.8s);
         a {
             padding: 25px 45px 25px 45px;
             border: solid 1px #f9d944;
@@ -110,24 +112,24 @@ body {
         .send-request-disign {
             // margin: 0px;
             &.circle {
+                position: relative;
                 display: inline-block;
                 width: 10px;
                 height: 10px;
+                top: 7px;
                 background: #f9d944;
                 @include border-radius (50%);
                 &.circle-left {
-                    position: relative;
-                    right: 12%;
+                    left: 50%;
                 }
                 &.circle-right {
-                    position: relative;
-                    right: -12%;
+                    right: 50%;
                 }
             }
             &.left-side-block, &.right-side-block {
                 display: inline-block;
                 position: relative;
-                top: 29px;
+                top: 25px;
                 height: 15px;
                 width: 17%;
                 border: transparent;
@@ -147,10 +149,11 @@ body {
     }
     &.nav-down {
         background-color: transparentize(#22262b,.1);
-        .send-request {
+        .send-request-nav {
             position: relative;
             text-align: center;
             font-size: 12px;
+            margin: 25px 0 20px 0;
             a {
                 padding: 15px 35px 15px 35px;
                 color: white;
@@ -163,30 +166,27 @@ body {
             }
             .send-request-disign {
                 &.circle {
-                    display: inline-block;
                     width: 10px;
                     height: 10px;
                     &.circle-left {
-                        position: relative;
-                        right: 12%;
+                        // right: 12%;
                     }
                     &.circle-right {
-                        position: relative;
-                        right: -12%;
+                        // right: -12%;
                     }
                 }
                 &.left-side-block, &.right-side-block {
-                    top: 19px;
+                    top: 15px;
                     height: 15px;
                     width: 13%;
                     border: transparent;
                     border-bottom: solid 1px #f9d944;
                 }
                 &.left-side-block {
-                    left: -8.5%;
+                    left: -6.5%;
                 }
                 &.right-side-block {
-                    right: -8.5%;
+                    right: -6.5%;
                 }
             }
         }
