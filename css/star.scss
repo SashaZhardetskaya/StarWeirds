@@ -20,15 +20,39 @@
   font-style: normal;
 }
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition-duration($duration) {
+  -webkit-transition-duration: $duration;
+     -moz-transition-duration: $duration;
+      -ms-transition-duration: $duration;
+       -o-transition-duration: $duration;
+          transition-duration: $duration;
+}
+
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+     -moz-background-size: $size;
+      -ms-background-size: $size;
+       -o-background-size: $size;
+          background-size: $size;
+}
+
+
+
+
 
 
 body {
 	background: url(../img/main-background.jpg) center center no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    @include background-size(cover);
 }
 
 .visible {
@@ -45,10 +69,7 @@ body {
 	width: 100%;
     font-size: 1.6em;
     color: white;
-	-webkit-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    -moz-transition-duration: 2s;
-    transition-duration: 2s;
+    @include transition-duration (2s);
     nav {
         height: 100%;
         width: 100%;
@@ -65,10 +86,7 @@ body {
             &:hover, &:active, &:focus{
                 color: transparentize(red,.3);
                 font-size: 25px;
-                -webkit-transition-duration: 0.7s;
-                -o-transition-duration: 0.7s;
-                -moz-transition-duration: 0.7s;
-                transition-duration: 0.7s;
+                @include transition-duration (0.7s);
             }
         }
     }
@@ -84,10 +102,7 @@ body {
             text-transform: uppercase;
             text-decoration: none;
             cursor: pointer;
-            -webkit-transition-duration: 1s;
-            -o-transition-duration: 1s;
-            -moz-transition-duration: 1s;
-            transition-duration: 1s;
+            @include transition-duration (1s);
             &:active, &:hover, &:focus {
                 color: #f9d944;
             }
@@ -99,9 +114,7 @@ body {
                 width: 10px;
                 height: 10px;
                 background: #f9d944;
-                -moz-border-radius: 50%;
-                -webkit-border-radius: 50%;
-                border-radius: 50%;
+                @include border-radius (50%);
                 &.circle-left {
                     position: relative;
                     right: 12%;
@@ -119,10 +132,7 @@ body {
                 width: 17%;
                 border: transparent;
                 border-bottom: solid 1px #f9d944;
-                -webkit-transition-duration: 1s;
-                -o-transition-duration: 1s;
-                -moz-transition-duration: 1s;
-                transition-duration: 1s;
+                @include transition-duration (1s);
             }
             &.left-side-block {
                 left: -8.5%;
@@ -156,10 +166,6 @@ body {
                     display: inline-block;
                     width: 10px;
                     height: 10px;
-                    background: #f9d944;
-                    -moz-border-radius: 50%;
-                    -webkit-border-radius: 50%;
-                    border-radius: 50%;
                     &.circle-left {
                         position: relative;
                         right: 12%;
@@ -199,6 +205,7 @@ body {
 	height: 100vh;
 	background: url(../img/deathStar.jpg) center center no-repeat;
 	// background-attachment: fixed;
+
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -242,10 +249,7 @@ body {
 	padding: 0;
     background: url(../img/storm.png) center center no-repeat;
 	background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    @include background-size (cover);
     color: white;
     overflow: hidden;
     .service-row {
@@ -287,9 +291,7 @@ body {
             width: 10px;
             height: 10px;
             background: #f9d944;
-            -moz-border-radius: 50%;
-            -webkit-border-radius: 50%;
-            border-radius: 50%;
+            @include border-radius (50%);
             &.circle-left {
                 position: relative;
                 right: 12%;

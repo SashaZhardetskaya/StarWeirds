@@ -7801,10 +7801,11 @@ button.close {
 body {
   background: url(../img/main-background.jpg) center center no-repeat;
   background-attachment: fixed;
-  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover; }
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .visible {
   display: block; }
@@ -7820,8 +7821,9 @@ body {
   font-size: 1.6em;
   color: white;
   -webkit-transition-duration: 2s;
-  -o-transition-duration: 2s;
   -moz-transition-duration: 2s;
+  -ms-transition-duration: 2s;
+  -o-transition-duration: 2s;
   transition-duration: 2s; }
   #nav-main nav {
     height: 100%;
@@ -7838,8 +7840,9 @@ body {
         color: rgba(255, 0, 0, 0.7);
         font-size: 25px;
         -webkit-transition-duration: 0.7s;
-        -o-transition-duration: 0.7s;
         -moz-transition-duration: 0.7s;
+        -ms-transition-duration: 0.7s;
+        -o-transition-duration: 0.7s;
         transition-duration: 0.7s; }
   #nav-main .send-request {
     position: relative;
@@ -7854,8 +7857,9 @@ body {
       text-decoration: none;
       cursor: pointer;
       -webkit-transition-duration: 1s;
-      -o-transition-duration: 1s;
       -moz-transition-duration: 1s;
+      -ms-transition-duration: 1s;
+      -o-transition-duration: 1s;
       transition-duration: 1s; }
       #nav-main .send-request a:active, #nav-main .send-request a:hover, #nav-main .send-request a:focus {
         color: #f9d944; }
@@ -7864,8 +7868,10 @@ body {
       width: 10px;
       height: 10px;
       background: #f9d944;
-      -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
       border-radius: 50%; }
       #nav-main .send-request .send-request-disign.circle.circle-left {
         position: relative;
@@ -7882,8 +7888,9 @@ body {
       border: transparent;
       border-bottom: solid 1px #f9d944;
       -webkit-transition-duration: 1s;
-      -o-transition-duration: 1s;
       -moz-transition-duration: 1s;
+      -ms-transition-duration: 1s;
+      -o-transition-duration: 1s;
       transition-duration: 1s; }
     #nav-main .send-request .send-request-disign.left-side-block {
       left: -8.5%; }
@@ -7908,11 +7915,7 @@ body {
       #nav-main.nav-down .send-request .send-request-disign.circle {
         display: inline-block;
         width: 10px;
-        height: 10px;
-        background: #f9d944;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%; }
+        height: 10px; }
         #nav-main.nav-down .send-request .send-request-disign.circle.circle-left {
           position: relative;
           right: 12%; }
@@ -7961,10 +7964,11 @@ body {
   padding: 0;
   background: url(../img/storm.png) center center no-repeat;
   background-attachment: fixed;
-  background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  -ms-background-size: cover;
   -o-background-size: cover;
+  background-size: cover;
   color: white;
   overflow: hidden; }
   .service .service-row {
@@ -8001,8 +8005,10 @@ body {
       width: 10px;
       height: 10px;
       background: #f9d944;
-      -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
       border-radius: 50%; }
       .send-request .send-request-disign.circle.circle-left {
         position: relative;
