@@ -72,24 +72,116 @@ body {
             }
         }
     }
-    .nav-contacts {
-        padding: 0 0 0 30%;
-        font-size: 18px;
-        -webkit-transition-duration: 1s;
-        -o-transition-duration: 1s;
-        -moz-transition-duration: 1s;
-        transition-duration: 1s;
+    .send-request {
+        position: relative;
+        text-align: center;
+        font-size: 12px;
+        a {
+            padding: 25px 45px 25px 45px;
+            border: solid 1px #f9d944;
+            border-bottom: none;  
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            cursor: pointer;
+            -webkit-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+            &:active, &:hover, &:focus {
+                color: #f9d944;
+            }
+        }
+        .send-request-disign {
+            // margin: 0px;
+            &.circle {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background: #f9d944;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                &.circle-left {
+                    position: relative;
+                    right: 12%;
+                }
+                &.circle-right {
+                    position: relative;
+                    right: -12%;
+                }
+            }
+            &.left-side-block, &.right-side-block {
+                display: inline-block;
+                position: relative;
+                top: 29px;
+                height: 15px;
+                width: 17%;
+                border: transparent;
+                border-bottom: solid 1px #f9d944;
+                -webkit-transition-duration: 1s;
+                -o-transition-duration: 1s;
+                -moz-transition-duration: 1s;
+                transition-duration: 1s;
+            }
+            &.left-side-block {
+                left: -8.5%;
+            }
+            &.right-side-block {
+                right: -8.5%;
+            }
+        }
     }
     &.nav-top {
         background: transparent;
     }
     &.nav-down {
         background-color: transparentize(#22262b,.1);
-        .nav-contacts {
-            padding: 0 0 0 30%;
-            font-size: 15px;
-            .nav-email-contact {
-                display: none;
+        .send-request {
+            position: relative;
+            text-align: center;
+            font-size: 12px;
+            a {
+                padding: 15px 35px 15px 35px;
+                color: white;
+                text-transform: uppercase;
+                text-decoration: none;
+                cursor: pointer;
+                &:active, &:hover, &:focus {
+                    color: #f9d944;
+                }
+            }
+            .send-request-disign {
+                &.circle {
+                    display: inline-block;
+                    width: 10px;
+                    height: 10px;
+                    background: #f9d944;
+                    -moz-border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    &.circle-left {
+                        position: relative;
+                        right: 12%;
+                    }
+                    &.circle-right {
+                        position: relative;
+                        right: -12%;
+                    }
+                }
+                &.left-side-block, &.right-side-block {
+                    top: 19px;
+                    height: 15px;
+                    width: 13%;
+                    border: transparent;
+                    border-bottom: solid 1px #f9d944;
+                }
+                &.left-side-block {
+                    left: -8.5%;
+                }
+                &.right-side-block {
+                    right: -8.5%;
+                }
             }
         }
     }

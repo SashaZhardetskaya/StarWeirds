@@ -7841,22 +7841,94 @@ body {
         -o-transition-duration: 0.7s;
         -moz-transition-duration: 0.7s;
         transition-duration: 0.7s; }
-  #nav-main .nav-contacts {
-    padding: 0 0 0 30%;
-    font-size: 18px;
-    -webkit-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    transition-duration: 1s; }
+  #nav-main .send-request {
+    position: relative;
+    text-align: center;
+    font-size: 12px; }
+    #nav-main .send-request a {
+      padding: 25px 45px 25px 45px;
+      border: solid 1px #f9d944;
+      border-bottom: none;
+      color: white;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      -webkit-transition-duration: 1s;
+      -o-transition-duration: 1s;
+      -moz-transition-duration: 1s;
+      transition-duration: 1s; }
+      #nav-main .send-request a:active, #nav-main .send-request a:hover, #nav-main .send-request a:focus {
+        color: #f9d944; }
+    #nav-main .send-request .send-request-disign.circle {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #f9d944;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%; }
+      #nav-main .send-request .send-request-disign.circle.circle-left {
+        position: relative;
+        right: 12%; }
+      #nav-main .send-request .send-request-disign.circle.circle-right {
+        position: relative;
+        right: -12%; }
+    #nav-main .send-request .send-request-disign.left-side-block, #nav-main .send-request .send-request-disign.right-side-block {
+      display: inline-block;
+      position: relative;
+      top: 29px;
+      height: 15px;
+      width: 17%;
+      border: transparent;
+      border-bottom: solid 1px #f9d944;
+      -webkit-transition-duration: 1s;
+      -o-transition-duration: 1s;
+      -moz-transition-duration: 1s;
+      transition-duration: 1s; }
+    #nav-main .send-request .send-request-disign.left-side-block {
+      left: -8.5%; }
+    #nav-main .send-request .send-request-disign.right-side-block {
+      right: -8.5%; }
   #nav-main.nav-top {
     background: transparent; }
   #nav-main.nav-down {
     background-color: rgba(34, 38, 43, 0.9); }
-    #nav-main.nav-down .nav-contacts {
-      padding: 0 0 0 30%;
-      font-size: 15px; }
-      #nav-main.nav-down .nav-contacts .nav-email-contact {
-        display: none; }
+    #nav-main.nav-down .send-request {
+      position: relative;
+      text-align: center;
+      font-size: 12px; }
+      #nav-main.nav-down .send-request a {
+        padding: 15px 35px 15px 35px;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer; }
+        #nav-main.nav-down .send-request a:active, #nav-main.nav-down .send-request a:hover, #nav-main.nav-down .send-request a:focus {
+          color: #f9d944; }
+      #nav-main.nav-down .send-request .send-request-disign.circle {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #f9d944;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%; }
+        #nav-main.nav-down .send-request .send-request-disign.circle.circle-left {
+          position: relative;
+          right: 12%; }
+        #nav-main.nav-down .send-request .send-request-disign.circle.circle-right {
+          position: relative;
+          right: -12%; }
+      #nav-main.nav-down .send-request .send-request-disign.left-side-block, #nav-main.nav-down .send-request .send-request-disign.right-side-block {
+        top: 19px;
+        height: 15px;
+        width: 13%;
+        border: transparent;
+        border-bottom: solid 1px #f9d944; }
+      #nav-main.nav-down .send-request .send-request-disign.left-side-block {
+        left: -8.5%; }
+      #nav-main.nav-down .send-request .send-request-disign.right-side-block {
+        right: -8.5%; }
 
 .home {
   height: 100vh;
