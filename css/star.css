@@ -7847,7 +7847,7 @@ body {
   #nav-main.nav-top {
     background: transparent; }
   #nav-main.nav-down {
-    background-color: rgba(34, 38, 43, 0.9); }
+    background-color: rgba(83, 82, 84, 0.3); }
     #nav-main.nav-down .send-request-nav, #nav-main.nav-down .price .send-request-price, .price #nav-main.nav-down .send-request-price {
       font-size: 12px;
       margin: 25px 0 20px 0; }
@@ -7963,12 +7963,14 @@ body {
   color: white;
   overflow: hidden; }
   .service .service-row {
+    margin: 100px 0 0 0;
     z-index: 2;
     position: relative;
     height: 100%; }
     .service .service-row .service-name {
       display: flex;
       justify-content: center;
+      margin: 6% 0 0 0;
       color: white;
       text-decoration: none;
       cursor: pointer; }
@@ -7982,7 +7984,7 @@ body {
   display: inline-block;
   height: 30px;
   width: 30px;
-  margin: 5% 50% 0 50%;
+  margin: 3% 50% 7% 50%;
   border: solid 1px #f9d944;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;

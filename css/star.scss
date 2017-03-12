@@ -101,7 +101,7 @@ body {
         background: transparent;
     }
     &.nav-down {
-        background-color: transparentize(#22262b,.1);
+        background-color: transparentize(#535254,.7);
         .send-request-nav {
             font-size: 12px;
             margin: 25px 0 20px 0;
@@ -249,12 +249,14 @@ body {
     color: white;
     overflow: hidden;
     .service-row {
+        margin: 100px 0 0 0;
         z-index: 2;
     	position: relative;
     	height: 100%;
         .service-name {
             display: flex;
             justify-content: center;
+            margin: 6% 0 0 0;
             color: white;
             text-decoration: none;
             cursor: pointer;
@@ -275,7 +277,7 @@ body {
         display: inline-block;
         height: 30px;
         width: 30px;
-        margin: 5% 50% 0 50%;
+        margin: 3% 50% 7% 50%;
         border: solid 1px #f9d944;
         @include border-radius(50%);
     }
