@@ -86,5 +86,9 @@ $('.send-request a').click(function(){
 	var contacts = $('.contacts').offset().top;
 	$('body').animate({scrollTop:contacts},880);
 });
+$('.send-request-price a').click(function(){
+	var contacts = $('.contacts').offset().top;
+	$('body').animate({scrollTop:contacts},880);
+});
 
 });

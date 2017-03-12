@@ -7844,94 +7844,85 @@ body {
         -ms-transition-duration: 0.7s;
         -o-transition-duration: 0.7s;
         transition-duration: 0.7s; }
-  #nav-main .send-request-nav {
-    position: relative;
-    text-align: center;
-    font-size: 12px;
-    margin: 35px 0 30px 0;
-    -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -ms-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s; }
-    #nav-main .send-request-nav a {
-      padding: 25px 45px 25px 45px;
-      border: solid 1px #f9d944;
-      border-bottom: none;
-      color: white;
-      text-transform: uppercase;
-      text-decoration: none;
-      cursor: pointer;
-      -webkit-transition-duration: 1s;
-      -moz-transition-duration: 1s;
-      -ms-transition-duration: 1s;
-      -o-transition-duration: 1s;
-      transition-duration: 1s; }
-      #nav-main .send-request-nav a:active, #nav-main .send-request-nav a:hover, #nav-main .send-request-nav a:focus {
-        color: #f9d944; }
-    #nav-main .send-request-nav .send-request-disign.circle {
-      position: relative;
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      top: 7px;
-      background: #f9d944;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-      border-radius: 50%; }
-      #nav-main .send-request-nav .send-request-disign.circle.circle-left {
-        left: 50%; }
-      #nav-main .send-request-nav .send-request-disign.circle.circle-right {
-        right: 50%; }
-    #nav-main .send-request-nav .send-request-disign.left-side-block, #nav-main .send-request-nav .send-request-disign.right-side-block {
-      display: inline-block;
-      position: relative;
-      top: 25px;
-      height: 15px;
-      width: 17%;
-      border: transparent;
-      border-bottom: solid 1px #f9d944;
-      -webkit-transition-duration: 1s;
-      -moz-transition-duration: 1s;
-      -ms-transition-duration: 1s;
-      -o-transition-duration: 1s;
-      transition-duration: 1s; }
-    #nav-main .send-request-nav .send-request-disign.left-side-block {
-      left: -8.5%; }
-    #nav-main .send-request-nav .send-request-disign.right-side-block {
-      right: -8.5%; }
   #nav-main.nav-top {
     background: transparent; }
   #nav-main.nav-down {
     background-color: rgba(34, 38, 43, 0.9); }
-    #nav-main.nav-down .send-request-nav {
-      position: relative;
-      text-align: center;
+    #nav-main.nav-down .send-request-nav, #nav-main.nav-down .price .send-request-price, .price #nav-main.nav-down .send-request-price {
       font-size: 12px;
       margin: 25px 0 20px 0; }
-      #nav-main.nav-down .send-request-nav a {
-        padding: 15px 35px 15px 35px;
-        color: white;
-        text-transform: uppercase;
-        text-decoration: none;
-        cursor: pointer; }
-        #nav-main.nav-down .send-request-nav a:active, #nav-main.nav-down .send-request-nav a:hover, #nav-main.nav-down .send-request-nav a:focus {
-          color: #f9d944; }
-      #nav-main.nav-down .send-request-nav .send-request-disign.circle {
+      #nav-main.nav-down .send-request-nav a, #nav-main.nav-down .price .send-request-price a, .price #nav-main.nav-down .send-request-price a {
+        padding: 15px 35px 15px 35px; }
+      #nav-main.nav-down .send-request-nav .send-request-disign.circle, #nav-main.nav-down .price .send-request-price .send-request-disign.circle, .price #nav-main.nav-down .send-request-price .send-request-disign.circle {
         width: 10px;
         height: 10px; }
-      #nav-main.nav-down .send-request-nav .send-request-disign.left-side-block, #nav-main.nav-down .send-request-nav .send-request-disign.right-side-block {
+      #nav-main.nav-down .send-request-nav .send-request-disign.left-side-block, #nav-main.nav-down .price .send-request-price .send-request-disign.left-side-block, .price #nav-main.nav-down .send-request-price .send-request-disign.left-side-block, #nav-main.nav-down .send-request-nav .send-request-disign.right-side-block, #nav-main.nav-down .price .send-request-price .send-request-disign.right-side-block, .price #nav-main.nav-down .send-request-price .send-request-disign.right-side-block {
         top: 15px;
         height: 15px;
-        width: 13%;
-        border: transparent;
-        border-bottom: solid 1px #f9d944; }
-      #nav-main.nav-down .send-request-nav .send-request-disign.left-side-block {
+        width: 13%; }
+      #nav-main.nav-down .send-request-nav .send-request-disign.left-side-block, #nav-main.nav-down .price .send-request-price .send-request-disign.left-side-block, .price #nav-main.nav-down .send-request-price .send-request-disign.left-side-block {
         left: -6.5%; }
-      #nav-main.nav-down .send-request-nav .send-request-disign.right-side-block {
+      #nav-main.nav-down .send-request-nav .send-request-disign.right-side-block, #nav-main.nav-down .price .send-request-price .send-request-disign.right-side-block, .price #nav-main.nav-down .send-request-price .send-request-disign.right-side-block {
         right: -6.5%; }
+
+.send-request-nav, .price .send-request-price {
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+  margin: 35px 0 30px 0;
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s; }
+  .send-request-nav a, .price .send-request-price a {
+    padding: 25px 45px 25px 45px;
+    border: solid 1px #f9d944;
+    border-bottom: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s; }
+    .send-request-nav a:active, .price .send-request-price a:active, .send-request-nav a:hover, .price .send-request-price a:hover, .send-request-nav a:focus, .price .send-request-price a:focus {
+      color: #f9d944; }
+  .send-request-nav .send-request-disign.circle, .price .send-request-price .send-request-disign.circle {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    top: 7px;
+    background: #f9d944;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
+    .send-request-nav .send-request-disign.circle.circle-left, .price .send-request-price .send-request-disign.circle.circle-left {
+      left: 50%; }
+    .send-request-nav .send-request-disign.circle.circle-right, .price .send-request-price .send-request-disign.circle.circle-right {
+      right: 50%; }
+  .send-request-nav .send-request-disign.left-side-block, .price .send-request-price .send-request-disign.left-side-block, .send-request-nav .send-request-disign.right-side-block, .price .send-request-price .send-request-disign.right-side-block {
+    display: inline-block;
+    position: relative;
+    top: 25px;
+    height: 15px;
+    width: 17%;
+    border: transparent;
+    border-bottom: solid 1px #f9d944;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s; }
+  .send-request-nav .send-request-disign.left-side-block, .price .send-request-price .send-request-disign.left-side-block {
+    left: -8.5%; }
+  .send-request-nav .send-request-disign.right-side-block, .price .send-request-price .send-request-disign.right-side-block {
+    right: -8.5%; }
 
 .home {
   height: 100vh;
@@ -8087,6 +8078,15 @@ body {
   height: 90vh;
   text-align: center;
   color: white; }
+  .price .send-request-price a {
+    padding: 27px 45px 27px 45px; }
+  .price .send-request-price .send-request-disign.left-side-block, .price .send-request-price .send-request-disign.right-side-block {
+    top: 27px;
+    width: 5%; }
+  .price .send-request-price .send-request-disign.left-side-block {
+    left: -3.5%; }
+  .price .send-request-price .send-request-disign.right-side-block {
+    right: -3.5%; }
 
 .questions {
   width: 100%;
