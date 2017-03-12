@@ -254,9 +254,9 @@ body {
 .service {
 	width: 100%;
 	padding: 0;
-    background: url(../img/storm.png) center center no-repeat;
+    background: url(../img/storm.png) 100% 37% no-repeat;
 	background-attachment: fixed;
-    @include background-size (cover);
+    @include background-size (80%);
     color: white;
     overflow: hidden;
     .service-row {

@@ -7962,13 +7962,13 @@ body {
 .service {
   width: 100%;
   padding: 0;
-  background: url(../img/storm.png) center center no-repeat;
+  background: url(../img/storm.png) 100% 37% no-repeat;
   background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -ms-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
   color: white;
   overflow: hidden; }
   .service .service-row {
