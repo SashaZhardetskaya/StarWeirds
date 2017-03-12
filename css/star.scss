@@ -87,11 +87,12 @@ body {
     .nav-links {
         display: flex;
         justify-content: space-between;
-        padding: 0 30px 0 45px;
+        padding: 10px 30px 10px 45px;
+        cursor: pointer;
         a {
             color: white;
             &:hover, &:active, &:focus{
-                color: transparentize(red,.3);
+                color: transparentize(#f9d944,.3);
                 font-size: 25px;
                 @include transition-duration (0.7s);
             }
