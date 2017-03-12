@@ -44,6 +44,13 @@
           background-size: $size;
 }
 
+@mixin transform-rotate($deg) {
+  -webkit-transform: rotate($deg); 
+     -moz-transform: rotate($deg); 
+      -ms-transform: rotate($deg); 
+       -o-transform: rotate($deg); 
+          transform: rotate($deg);
+}
 
 
 
@@ -267,6 +274,40 @@ body {
             display: block;
             text-align: center;
     	}
+        .service-block {
+            a {
+                cursor: pointer;
+            }
+        }
+    }
+}
+.service-icon {
+    .icon-circle {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        margin: 5% 50% 0 50%;
+        border: solid 1px #f9d944;
+        @include border-radius(50%);
+    }
+    .icon-triangle {
+        position: relative;
+        top: 5px;
+        right: 5px;
+        display: inline-block;
+        margin: 0 50% 0 50%;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 9px solid #f9d944;
+        @include transition-duration(0.7s);
+        &.triangle-active {
+            @include transform-rotate(180deg);
+        }
+        &.triangle-inactive {
+            @include transform-rotate(0deg);
+        }
     }
 }
 .send-request {

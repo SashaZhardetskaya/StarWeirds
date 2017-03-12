@@ -20,12 +20,12 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){ //services accardion
-	$('.service-icon a').on('click', function(){
+	$('.service-block a').on('click', function(){
 		// $('.service-icon a').css('outline','none');
 		// $(this).css('outline','19px solid #666');
 		
 		//.eq- оставляет только элемент с порядковым номером n
-		var n =$('.service-icon a').index(this);
+		var n =$('.service-block a').index(this);
 		var currentHasVisible = $('.service-description').eq(n).hasClass('visible');
 		$('.service-description').addClass('hidden').removeClass('visible');
 		if (currentHasVisible) {
@@ -37,6 +37,22 @@ $(document).ready(function(){ //services accardion
 		}
 	});
 });
+
+$(document).ready(function(){ //services traingle rotation
+	$('.service-block a').on('click', function(){
+		var n =$('.service-block a').index(this);
+		var currentHasActive = $('.icon-triangle').eq(n).hasClass('triangle-active');
+		$('.icon-triangle').addClass('triangle-inactive').removeClass('triangle-active');
+		if (currentHasActive) {
+			$('.icon-triangle').eq(n).removeClass('triangle-active');
+			$('.icon-triangle').eq(n).addClass('triangle-inactive');
+		} else {
+			$('.icon-triangle').eq(n).removeClass('triangle-inactive');
+			$('.icon-triangle').eq(n).addClass('triangle-active');
+		}
+	});
+});
+
 
 /* ANCHORS	*/
 
