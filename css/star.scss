@@ -95,7 +95,7 @@ body {
         cursor: pointer;
         a {
             color: white;
-            &:hover, &:active, &:focus{
+            &:hover, &:active, &:focus{ //возможно убрать фокус
                 color: transparentize(#f9d944,.3);
                 font-size: 25px;
                 @include transition-duration (0.7s);
@@ -106,7 +106,7 @@ body {
         background: transparent;
     }
     &.nav-down {
-        background-color: transparentize(#535254,.7);
+        background-color: transparentize(#070a11,.3);
         .send-request-nav {
             font-size: 12px;
             margin: 25px 0 20px 0;
