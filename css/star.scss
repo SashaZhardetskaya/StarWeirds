@@ -377,7 +377,7 @@ body {
 .price {
     margin: 0;
     padding-top: 5%;
-    height: 100vh;
+    // height: 100vh;
     text-align: center;
     color: white;
     .price-row {
@@ -447,19 +447,64 @@ body {
 
 .questions {
     width: 100%;
-    height: 100%;
+    // height: 100%;
+    .questions-block {
+        width: 60%;
+
+    }
     .question-form {
         color: white;
         background: transparent;
         border: none;
         border-radius: 0px;
+        border-right: solid 1px #f9d944;
+        border-left: solid 1px #f9d944;
+        .border-line-top-left {
+            width: 20%;
+            margin: 0 100% 0 0; 
+            border-color: #f9d944;
+            color: #f9d944;
+            background-color: #f9d944;
+        }
+        .border-line-top-right {
+            width: 20%;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 0;
+            border-color: #f9d944;
+            color: #f9d944;
+            background-color: #f9d944;
+        }
+        .border-line-bottom-left {
+            width: 20%;
+            margin: 0 100% 0 0; 
+            border-color: #f9d944;
+            color: #f9d944;
+            background-color: #f9d944;
+        }
+        .border-line-bottom-right {
+            width: 20%;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: 0;
+            border-color: #f9d944;
+            color: #f9d944;
+            background-color: #f9d944;
+        }
         .question {
-            background: transparentize(white,.9);
+            background: transparent;
             border: none;
             border-radius: 0%;
             color: white;
         }
+        .answer {
+            // border-bottom: solid 1px #f9d944;
+        }
     }
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body { //cancell bootstrap stile
+    border-top: 1px solid transparentize(#f9d944,.8);;
 }
 
 .contacts {
