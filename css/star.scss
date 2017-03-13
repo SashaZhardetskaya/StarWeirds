@@ -501,6 +501,15 @@ body {
             // border-bottom: solid 1px #f9d944;
         }
     }
+    .question-pic {
+        height: 100vh;
+        // width: 100%;
+        // padding: 0;
+        // background-attachment: fixed;
+        background: url(../img/question.png) 110% 0% no-repeat;
+        @include background-size (60%);
+        // overflow: hidden;
+    }
 }
 
 .panel-group .panel-heading + .panel-collapse > .panel-body { //cancell bootstrap stile

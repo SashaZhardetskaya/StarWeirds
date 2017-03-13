@@ -8173,6 +8173,14 @@ body {
       border: none;
       border-radius: 0%;
       color: white; }
+  .questions .question-pic {
+    height: 100vh;
+    background: url(../img/question.png) 110% 0% no-repeat;
+    -webkit-background-size: 60%;
+    -moz-background-size: 60%;
+    -ms-background-size: 60%;
+    -o-background-size: 60%;
+    background-size: 60%; }
 
 .panel-group .panel-heading + .panel-collapse > .panel-body {
   border-top: 1px solid rgba(249, 217, 68, 0.2); }
