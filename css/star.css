@@ -8030,7 +8030,7 @@ body {
   position: relative;
   z-index: 2;
   text-align: center;
-  margin: 35px 0 50px 0; }
+  margin: 0 0 170px 0; }
   .send-request a {
     padding: 30px 100px 30px 100px;
     color: white;
@@ -8082,16 +8082,18 @@ body {
       right: 4%; }
 
 .price {
-  height: 90vh;
+  margin: 0;
+  padding-top: 5%;
+  height: 100vh;
   text-align: center;
   color: white; }
+  .price .price-row {
+    margin: 3% 0 1% 0; }
   .price .price-name {
     display: inline-block;
     color: white; }
     .price .price-name:hover, .price .price-name:active, .price .price-name:focus {
       color: #f9d944; }
-      .price .price-name:hover .price hr, .price .price-name:active .price hr, .price .price-name:focus .price hr {
-        border-bottom: 2px dashed #f9d944; }
   .price .price-number {
     display: inline-block;
     color: white; }
@@ -8099,30 +8101,34 @@ body {
       color: #f9d944; }
   .price hr {
     display: inline-block;
-    width: 45%;
+    width: 40%;
     margin: 0 12px 3px 12px;
     border-color: transparent;
     color: transparent;
     background-color: transparent;
+    cursor: pointer;
     border-bottom: 2px dashed rgba(249, 217, 68, 0.7); }
     .price hr:hover, .price hr:active, .price hr:focus {
       border-bottom: 2px dashed #f9d944; }
   .price .triangle-price {
     display: inline-block;
-    width: 2px;
-    height: 2px;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 9px solid #f9d944; }
-  .price .send-request-price a {
-    padding: 27px 45px 27px 45px; }
-  .price .send-request-price .send-request-disign.left-side-block, .price .send-request-price .send-request-disign.right-side-block {
-    top: 27px;
-    width: 5%; }
-  .price .send-request-price .send-request-disign.left-side-block {
-    left: -3.5%; }
-  .price .send-request-price .send-request-disign.right-side-block {
-    right: -3.5%; }
+    margin: 0 15px 0 1px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 11px solid rgba(249, 217, 68, 0.9);
+    border-bottom: 6px solid transparent; }
+  .price .send-request-price {
+    margin: 5% 0 0 0; }
+    .price .send-request-price a {
+      padding: 27px 45px 27px 45px; }
+    .price .send-request-price .send-request-disign.left-side-block, .price .send-request-price .send-request-disign.right-side-block {
+      top: 27px;
+      width: 5%; }
+    .price .send-request-price .send-request-disign.left-side-block {
+      left: -3.5%; }
+    .price .send-request-price .send-request-disign.right-side-block {
+      right: -3.5%; }
 
 .questions {
   width: 100%;
