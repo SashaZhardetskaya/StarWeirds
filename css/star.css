@@ -7805,6 +7805,13 @@ button.close {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'GothamPro';
+  src: url("GothamPro.eot");
+  src: url("GothamPro.woff2") format("woff2"), url("GothamPro.woff") format("woff"), url("GothamPro.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   background: url(../img/main-background.jpg) center center no-repeat;
   background-attachment: fixed;
@@ -7828,6 +7835,8 @@ body {
   position: fixed;
   top: 0px;
   width: 100%;
+  font-family: "GothamPro";
+  text-transform: uppercase;
   font-size: 1.6em;
   color: white;
   -webkit-transition-duration: 2s;

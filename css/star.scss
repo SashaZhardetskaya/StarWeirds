@@ -30,6 +30,16 @@
   font-style: normal;
 }
 
+@font-face { //for nav
+  font-family: 'GothamPro';
+  src: url('GothamPro.eot');
+  src: url('GothamPro.woff2') format('woff2'),
+       url('GothamPro.woff') format('woff'),
+       url('GothamPro.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -89,6 +99,8 @@ body {
 	position: fixed;
 	top: 0px;
 	width: 100%;
+    font-family: "GothamPro";
+    text-transform: uppercase;
     font-size: 1.6em;
     color: white;
     @include transition-duration (2s);
