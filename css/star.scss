@@ -20,6 +20,17 @@
   font-style: normal;
 }
 
+@font-face { //for servise 
+  font-family: 'MyriadPro-Regular';
+  src: url('MyriadPro-Regular.eot');
+  src: url('MyriadPro-Regular.woff2') format('woff2'),
+       url('MyriadPro-Regular.woff') format('woff'),
+       url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -264,18 +275,27 @@ body {
         .service-name {
             display: flex;
             justify-content: center;
-            margin: 6% 0 0 0;
+            margin: 6% 0 0 4%;
             color: white;
+            font-family: 'MyriadPro-Regular';
+            font-size: 1.6rem;
             text-decoration: none;
             cursor: pointer;
+            &:hover, &:active, &:focus{
+                color: #f9d944;
+                @include transition-duration (0.3s);
+            }
         }
     	.service-description {
             display: block;
             text-align: center;
+            font-family: 'MyriadPro-Regular';
+            font-size: 1.6rem;
     	}
         .service-block {
             a {
                 cursor: pointer;
+                text-decoration: none;
             }
         }
     }
@@ -386,6 +406,8 @@ body {
     .price-name {
         display: inline-block;
         color: white;
+        font-family: 'MyriadPro-Regular';
+        font-size: 1.6rem;
         &:hover, &:active, &:focus {
             color: #f9d944;
         }
@@ -393,6 +415,8 @@ body {
     .price-number {
         display: inline-block;
         color: white;
+        font-family: 'MyriadPro-Regular';
+        font-size: 1.6rem;
         &:hover, &:active, &:focus {
             color: #f9d944;
         }
