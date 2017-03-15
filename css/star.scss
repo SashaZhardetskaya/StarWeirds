@@ -668,4 +668,17 @@ body {
             color: #f9d944;
         }
     }
+    .my-contact-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: 30px;
+        margin-top: 8%;
+        span {
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            font-family: "MyriadPro-Regular";
+        }
+    }
 }
