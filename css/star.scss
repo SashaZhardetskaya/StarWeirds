@@ -81,6 +81,8 @@ body {
 	background: url(../img/main-background.jpg) center center no-repeat;
     background-attachment: fixed;
     @include background-size(cover);
+    // background: url(../img/bg.png) 50% 100% no-repeat black; - второе решение по фону, можно оставить этот и отменить в футере
+    // @include background-size (80%); 
 }
 
 .custom-row {
@@ -535,10 +537,12 @@ body {
         }
         .question {
             height: 80px;
+            padding-top: 6%;
             background: transparent;
             border: none;
             border-radius: 0%;
             color: white;
+            text-align: center;
         }
         .answer {
             // border-bottom: solid 1px #f9d944;
@@ -561,7 +565,8 @@ body {
 
 .contacts {
     height: 100%;
-    // background: url(../img/kWVaXH.jpg) center 110% no-repeat black;
+    background: url(../img/footer-star.png) 50% 100% no-repeat black;
+    @include background-size (75%);
     width: 100%;
     padding: 0;
     color: white;

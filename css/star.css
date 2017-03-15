@@ -8209,10 +8209,12 @@ body {
       background-color: #f9d944; }
     .questions .question-form .question {
       height: 80px;
+      padding-top: 6%;
       background: transparent;
       border: none;
       border-radius: 0%;
-      color: white; }
+      color: white;
+      text-align: center; }
   .questions .question-pic {
     height: 110vh;
     background: url(../img/question.png) 110% 50% no-repeat;
@@ -8227,6 +8229,12 @@ body {
 
 .contacts {
   height: 100%;
+  background: url(../img/footer-star.png) 50% 100% no-repeat black;
+  -webkit-background-size: 75%;
+  -moz-background-size: 75%;
+  -ms-background-size: 75%;
+  -o-background-size: 75%;
+  background-size: 75%;
   width: 100%;
   padding: 0;
   color: white; }
