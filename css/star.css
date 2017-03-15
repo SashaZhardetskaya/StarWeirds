@@ -7837,7 +7837,7 @@ body {
   width: 100%;
   font-family: "GothamPro";
   text-transform: uppercase;
-  font-size: 1.6em;
+  font-size: 1.5rem;
   color: white;
   -webkit-transition-duration: 2s;
   -moz-transition-duration: 2s;
@@ -7852,13 +7852,14 @@ body {
   #nav-main .nav-links {
     display: flex;
     justify-content: space-between;
-    padding: 10px 30px 10px 45px;
+    padding: 20px 30px 10px 45px;
     cursor: pointer; }
     #nav-main .nav-links a {
-      color: white; }
+      color: white;
+      text-decoration: none; }
       #nav-main .nav-links a:hover, #nav-main .nav-links a:active, #nav-main .nav-links a:focus {
         color: rgba(249, 217, 68, 0.7);
-        font-size: 25px;
+        font-size: 2.2rem;
         -webkit-transition-duration: 0.7s;
         -moz-transition-duration: 0.7s;
         -ms-transition-duration: 0.7s;
@@ -7869,7 +7870,8 @@ body {
   #nav-main.nav-down {
     background-color: rgba(7, 10, 17, 0.7); }
     #nav-main.nav-down .send-request-nav, #nav-main.nav-down .price .send-request-price, .price #nav-main.nav-down .send-request-price {
-      font-size: 12px;
+      font-family: 'MyriadPro-Regular';
+      font-size: 1.8rem;
       margin: 25px 0 20px 0; }
       #nav-main.nav-down .send-request-nav a, #nav-main.nav-down .price .send-request-price a, .price #nav-main.nav-down .send-request-price a {
         padding: 15px 35px 15px 35px; }
@@ -7888,7 +7890,7 @@ body {
 .send-request-nav, .price .send-request-price {
   position: relative;
   text-align: center;
-  font-size: 12px;
+  font-size: 1.8rem;
   margin: 35px 0 30px 0;
   -webkit-transition-duration: 0.8s;
   -moz-transition-duration: 0.8s;
@@ -7902,6 +7904,7 @@ body {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+    font-family: 'MyriadPro-Regular';
     cursor: pointer;
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
@@ -8064,6 +8067,8 @@ body {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 1.8rem;
+    font-family: "MyriadPro-Regular";
     cursor: pointer; }
     .send-request a:active, .send-request a:hover, .send-request a:focus {
       color: #f9d944; }
@@ -8299,6 +8304,8 @@ body {
     color: white;
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 1.8rem;
+    font-family: "MyriadPro-Regular";
     cursor: pointer;
     outline: none; }
     .contacts .send-request input:active, .contacts .send-request input:hover, .contacts .send-request input:focus {
