@@ -8242,68 +8242,17 @@ body {
     margin: 45px 0 0 0;
     font-size: 20px;
     text-align: center; }
-  .contacts .our-contacts-list {
-    margin: 25px 0 45px 0;
-    list-style-type: none;
-    text-align: center; }
-    .contacts .our-contacts-list li {
-      display: inline; }
-      .contacts .our-contacts-list li .our-contact-name {
-        margin: 0 5px 0 0;
-        font-size: 15px;
-        text-transform: uppercase; }
-      .contacts .our-contacts-list li .our-contact-value {
-        margin: 0 15% 0 0;
-        font-size: 20px;
-        font-weight: 100; }
   .contacts .user-contact {
     display: block;
+    width: 50%;
     padding: 10px 70px 10px 5px;
-    margin: 0 0 10px 0;
+    margin: 0 auto 10px auto;
     background-color: rgba(255, 255, 255, 0.1);
     border: none; }
-  .contacts .choose-service-form, .contacts .choose-contact-form {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-sizing: border-box;
-    background: transparent;
-    color: white; }
-    .contacts .choose-service-form .input-checkbox, .contacts .choose-contact-form .input-checkbox {
-      display: none; }
-      .contacts .choose-service-form .input-checkbox + span, .contacts .choose-contact-form .input-checkbox + span {
-        box-sizing: border-box;
-        width: 30px;
-        height: 30px;
-        border: solid #dae4eb 1px;
-        box-shadow: 2px 2px 10px -5px #c1cfd9 inset;
-        background: rgba(255, 255, 255, 0.1);
-        cursor: pointer; }
-      .contacts .choose-service-form .input-checkbox:checked + span, .contacts .choose-contact-form .input-checkbox:checked + span {
-        background: rgba(255, 255, 255, 0.1);
-        position: relative; }
-      .contacts .choose-service-form .input-checkbox:checked + span:before, .contacts .choose-contact-form .input-checkbox:checked + span:before {
-        content: '';
-        position: absolute;
-        left: 4px;
-        top: 13px;
-        width: 12px;
-        height: 5px;
-        background: #8b2121;
-        -webkit-transform: rotate(50deg);
-        transform: rotate(50deg); }
-      .contacts .choose-service-form .input-checkbox:checked + span:after, .contacts .choose-contact-form .input-checkbox:checked + span:after {
-        content: '';
-        position: absolute;
-        left: 8px;
-        top: 11px;
-        width: 19px;
-        height: 5px;
-        background: #8b2121;
-        -webkit-transform: rotate(-50deg);
-        transform: rotate(-45deg); }
   .contacts .contact-textarea {
     display: block;
+    width: 50%;
+    margin: 0 auto 10px auto;
     background: rgba(255, 255, 255, 0.1); }
   .contacts .send-request input {
     background: transparent;
