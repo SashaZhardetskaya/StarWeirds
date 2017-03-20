@@ -88,7 +88,9 @@ body {
 .custom-row {
     margin: 0;
 }
-
+.custom-section {
+    padding: 0;
+}
 .visible {
     display: block;
 }
@@ -97,6 +99,9 @@ body {
 }
 
 #nav-main {
+    @media (max-width: 420px) {
+        display: none;
+    }
 	z-index: 4;
 	position: fixed;
 	top: 0px;
@@ -167,6 +172,9 @@ body {
     }
 }
 .send-request-nav {
+    @media (max-width: 768px) {
+        display: none;
+    }
     position: relative;
     text-align: center;
     font-size: 1.8rem;
