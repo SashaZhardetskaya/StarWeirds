@@ -8237,23 +8237,26 @@ body {
   background-size: 75%;
   width: 100%;
   padding: 0;
-  color: white; }
-  .contacts .our-contact-title {
-    margin: 45px 0 0 0;
-    font-size: 20px;
-    text-align: center; }
+  color: white;
+  font-family: "MyriadPro-Regular"; }
+  .contacts .user-contacts-section p {
+    margin: 0;
+    font-family: "MyriadPro-Regular";
+    font-size: 1.7rem; }
   .contacts .user-contact {
     display: block;
-    width: 50%;
+    width: 100%;
     padding: 10px 70px 10px 5px;
-    margin: 0 auto 10px auto;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none; }
+    margin: 0 0 10px 0;
+    background-color: rgba(71, 70, 68, 0.1);
+    border: solid 1px #f9d944; }
   .contacts .contact-textarea {
     display: block;
-    width: 50%;
-    margin: 0 auto 10px auto;
-    background: rgba(255, 255, 255, 0.1); }
+    width: 100%;
+    margin: 0 0 10px 0;
+    background: rgba(71, 70, 68, 0.1);
+    border: solid 1px #f9d944;
+    font-family: "MyriadPro-Regular"; }
   .contacts .send-request input {
     background: transparent;
     border: none;

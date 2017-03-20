@@ -570,24 +570,29 @@ body {
     width: 100%;
     padding: 0;
     color: white;
-    .our-contact-title {
-        margin: 45px 0 0 0;
-        font-size: 20px;
-        text-align: center;
+    font-family: "MyriadPro-Regular";
+    .user-contacts-section {
+        p {
+            margin: 0;
+            font-family: "MyriadPro-Regular";
+            font-size: 1.7rem;
+        }
     }
     .user-contact {
         display: block;
-        width: 50%;
+        width: 100%;
         padding: 10px 70px 10px 5px;
-        margin: 0 auto 10px auto;
-        background-color: transparentize(white,.9);
-        border: none;
+        margin: 0 0 10px 0;
+        background-color: transparentize(#474644,.9);
+        border: solid 1px #f9d944;
     }
     .contact-textarea {
         display: block;
-        width: 50%;
-        margin: 0 auto 10px auto;
-        background: transparentize(white,.9);
+        width: 100%;
+        margin: 0 0 10px 0;
+        background: transparentize(#474644,.9);
+        border: solid 1px #f9d944; 
+        font-family: "MyriadPro-Regular";
     }
     .send-request input {
         background: transparent;
