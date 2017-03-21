@@ -137,13 +137,19 @@ body {
         background: transparent;
     }
     &.nav-down {
-        background-color: transparentize(#070a11,.3);
+        // background-color: transparentize(#070a11,.3);
+        background: -moz-linear-gradient(top, rgba(2,2,2,0.72) 12%, rgba(1,1,1,0.72) 42%, rgba(0,0,0,0.14) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(2,2,2,0.72) 12%,rgba(1,1,1,0.72) 42%,rgba(0,0,0,0.14) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(2,2,2,0.72) 12%,rgba(1,1,1,0.72) 42%,rgba(0,0,0,0.14) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8020202', endColorstr='#24000000',GradientType=0 ); // IE6-9
         .send-request-nav {
             font-family: 'MyriadPro-Regular';
             font-size: 1.8rem;
             margin: 25px 0 20px 0;
             a {
                 padding: 13px 3px 13px 3px;
+                border: 1px solid transparentize(#f9d944,.3);
+                border-bottom: transparent;
                 // background: transparentize(black,.7);
                 background: -moz-linear-gradient(top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 2%, rgba(0,0,0,0.1) 100%); /* FF3.6-15 */
                 background: -webkit-linear-gradient(top, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 2%,rgba(0,0,0,0.1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -154,6 +160,7 @@ body {
                 &.circle {
                     width: 10px;
                     height: 10px;
+                    background: transparentize(#f9d944,.3);
                     &.circle-left {
                         // right: 12%;
                     }
@@ -165,48 +172,32 @@ body {
                     top: 11px;
                     // height: 15px;
                     width: 15%;
+                    border-bottom: 1px solid transparentize(#f9d944,.3);
                 }
                 &.left-side-block {
-                    left: -0.8%;
-                    @media (min-width: 1505px) {
-                        left: -0.7%;
-                    }
-                    @media (min-width: 1620px) {
-                        left: -0.6%;
-                    }
-                    @media (min-width: 1970px) {
-                        left: -0.5%;
-                    }
-                    @media (min-width: 2400px) {
-                        left: -0.4%;
-                    }
-                    @media (min-width: 3050px) {
-                        left: -0.3%;
-                    }
-                    @media (min-width: 3500px) {
-                        left: -0.2%;
-                    }
+                    left: -4px;
+                    // left: -0.8%;
+                    // @media (min-width: 1505px) {
+                    //     left: -0.7%;
+                    // }
+                    // @media (min-width: 1620px) {
+                    //     left: -0.6%;
+                    // }
+                    // @media (min-width: 1970px) {
+                    //     left: -0.5%;
+                    // }
+                    // @media (min-width: 2400px) {
+                    //     left: -0.4%;
+                    // }
+                    // @media (min-width: 3050px) {
+                    //     left: -0.3%;
+                    // }
+                    // @media (min-width: 3500px) {
+                    //     left: -0.2%;
+                    // }
                 }
                 &.right-side-block {
-                    right: -0.8%;
-                    @media (min-width: 1505px) {
-                        right: -0.7%;
-                    }
-                    @media (min-width: 1620px) {
-                        right: -0.6%;
-                    }
-                    @media (min-width: 1970px) {
-                        right: -0.5%;
-                    }
-                    @media (min-width: 2400px) {
-                        right: -0.4%;
-                    }
-                    @media (min-width: 3050px) {
-                        right: -0.3%;
-                    }
-                    @media (min-width: 3500px) {
-                        right: -0.2%;
-                    }
+                    right: -4px;
                 }
             }
         }
@@ -263,126 +254,70 @@ body {
             @include transition-duration (1s);
         }
         &.left-side-block {
-            left: -5.9%;
+            left: -31px;
 
-            $min-width: 1375px;
-            $left: -5.6%;
+            // left: -5.9%;
 
-            @while $min-width < 2000px {
-                @media (min-width: #{$min-width}){
-                    left: #{$left};
-                }
-              $min-width: $min-width + 20px;
-              $left: $left +0.058%;
-            }
+            // $min-width: 769px;
+            // $left: -10.6%;
 
-            $min-width: 2000px;
-            $left: -3.87%;
+            // @while $min-width < 1000px {
+            //     @media (min-width: #{$min-width}){
+            //         left: #{$left};
+            //     }
+            //   $min-width: $min-width + 10px;
+            //   $left: $left + 0.12%;
+            // }
 
-            @while $min-width < 3000px {
-                @media (min-width: #{$min-width}){
-                    left: #{$left};
-                }
-              $min-width: $min-width + 20px;
-              $left: $left +0.03%;
-            }
+            // $min-width: 1000px;
+            // $left: -10.6%;
 
-            $min-width: 3000px;
-            $left: -2.5%;
+            // @while $min-width < 1375px {
+            //     @media (min-width: #{$min-width}){
+            //         left: #{$left};
+            //     }
+            //   $min-width: $min-width + 10px;
+            //   $left: $left + 0.12%;
+            // }
 
-            @while $min-width < 4000px {
-                @media (min-width: #{$min-width}){
-                    left: #{$left};
-                }
-              $min-width: $min-width + 20px;
-              $left: $left + 0.018%;
-            }
-            @media (min-width: 4000px) {
-                left: -1.7%;
-            }
+            // $min-width: 1375px;
+            // $left: -5.6%;
 
+            // @while $min-width < 2000px {
+            //     @media (min-width: #{$min-width}){
+            //         left: #{$left};
+            //     }
+            //   $min-width: $min-width + 20px;
+            //   $left: $left +0.058%;
+            // }
 
-        //     @media (min-width: 1375px) {
-        //         left: -5.6%;
-        //     }
-        //     @media (min-width: 1455px) {
-        //         left: -5.4%;
-        //     }
-        //     @media (min-width: 1505px) {
-        //         left: -5.2%;
-        //     }
-        //     @media (min-width: 1560px) {
-        //         left: -5%;
-        //     }
-        //     @media (min-width: 1620px) {
-        //         left: -4.6%;
-        //     }
-        //     @media (min-width: 1800px) {
-        //         left: -4.2%;
-        //     }
-        //     @media (min-width: 1970px) {
-        //         left: -4%;
-        //     }
-        //     @media (min-width: 2050px) {
-        //         left: -3.8%;
-        //     }
-        //     @media (min-width: 2200px) {
-        //         left: -3.5%;
-        //     }
-        //     @media (min-width: 2400px) {
-        //         left: -3.1%;
-        //     }
-        //     @media (min-width: 2650px) {
-        //         left: -2.8%;
-        //     }
-        //     @media (min-width: 3050px) {
-        //         left: -2.6%;
-        //     }
-        //     @media (min-width: 3500px) {
-        //         left: -2.2%;
-        //     }
+            // $min-width: 2000px;
+            // $left: -3.87%;
+
+            // @while $min-width < 3000px {
+            //     @media (min-width: #{$min-width}){
+            //         left: #{$left};
+            //     }
+            //   $min-width: $min-width + 20px;
+            //   $left: $left +0.03%;
+            // }
+
+            // $min-width: 3000px;
+            // $left: -2.5%;
+
+            // @while $min-width < 4000px {
+            //     @media (min-width: #{$min-width}){
+            //         left: #{$left};
+            //     }
+            //   $min-width: $min-width + 20px;
+            //   $left: $left + 0.018%;
+            // }
+            // @media (min-width: 4000px) {
+            //     left: -1.7%;
+            // }
         }
         &.right-side-block {
-            right: -5.9%;
-            @media (min-width: 1375px) {
-                right: -5.6%;
-            }
-            @media (min-width: 1455px) {
-                right: -5.4%;
-            }
-            @media (min-width: 1505px) {
-                right: -5.2%;
-            }
-            @media (min-width: 1560px) {
-                right: -5%;
-            }
-            @media (min-width: 1620px) {
-                right: -4.4%;
-            }
-            @media (min-width: 1800px) {
-                right: -4.2%;
-            }
-            @media (min-width: 1970px) {
-                right: -4%;
-            }
-            @media (min-width: 2050px) {
-                right: -3.8%;
-            }
-            @media (min-width: 2200px) {
-                right: -3.5%;
-            }
-            @media (min-width: 2400px) {
-                right: -3.1%;
-            }
-            @media (min-width: 2650px) {
-                right: -2.8%;
-            }
-            @media (min-width: 3050px) {
-                right: -2.6%;
-            }
-            @media (min-width: 3500px) {
-                right: -2.2%;
-            }
+            right: -31px;
         }
     }
 }
@@ -399,13 +334,11 @@ body {
 	height: 100vh;
 	background: url(../img/deathStar.jpg) center center no-repeat;
 	// background-attachment: fixed;
-
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-
 .home-page-content{
 	position: relative;
 	top: 40%;
@@ -418,12 +351,26 @@ body {
     h1 {
         color: #f9d944;
     	font-family: "SF Distant Galaxy Outline";
-        font-size: 60px;
+        // font-size: 5em;
     	font-weight: 200;
     	line-height: 57px;
+        $min-width: 170px;
+        $font-size: 1.3em;
+
+        @while $min-width < 500px {
+            @media (min-width: #{$min-width}){
+                font-size: #{$font-size};
+            }
+          $min-width: $min-width + 30px;
+          $font-size: $font-size + 0.2em;
+        }
+
+        @media (min-width: 500px) {
+            font-size: 5em;
+        }
     }
     .home-text-power {
-        font-size: 110px;
+        font-size: 8em;
     }
 }
 
@@ -460,7 +407,7 @@ body {
             margin: 6% 0 0 4%;
             color: white;
             font-family: 'MyriadPro-Regular';
-            font-size: 1.6rem;
+            font-size: 1.2em;
             text-decoration: none;
             cursor: pointer;
             &:hover, &:active, &:focus{
@@ -472,7 +419,7 @@ body {
             display: block;
             text-align: center;
             font-family: 'MyriadPro-Regular';
-            font-size: 1.6rem;
+            font-size: 1.1em;
     	}
         .service-block {
             a {
@@ -517,11 +464,11 @@ body {
     text-align: center;
     margin: 0 0 170px 0;
     a {
-        padding: 30px 100px 30px 100px;
+        padding: 30px 5% 30px 5%;
         color: white;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 1.8rem;
+        font-size: 1.3em;
         font-family: "MyriadPro-Regular";
         cursor: pointer;
         &:active, &:hover, &:focus {
@@ -538,18 +485,18 @@ body {
             @include border-radius (50%);
             &.circle-left {
                 position: relative;
-                right: 12%;
+                right: 6%;
             }
             &.circle-right {
                 position: relative;
-                right: -12%;
+                right: -6%;
             }
         }
         &.horizontal-line {
             display: inline-block;
             position: relative;
             top: -4px;
-            width: 17%;
+            width: 11%;
             border-color: #f9d944;
             &.line-right {
                 right: 5.3%;
