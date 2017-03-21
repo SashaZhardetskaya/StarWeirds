@@ -351,12 +351,10 @@ body {
     h1 {
         color: #f9d944;
     	font-family: "SF Distant Galaxy Outline";
-        // font-size: 5em;
     	font-weight: 200;
     	line-height: 57px;
         $min-width: 170px;
         $font-size: 1.3em;
-
         @while $min-width < 500px {
             @media (min-width: #{$min-width}){
                 font-size: #{$font-size};
@@ -364,13 +362,30 @@ body {
           $min-width: $min-width + 30px;
           $font-size: $font-size + 0.2em;
         }
-
+        @media (max-width: 500px) {
+            margin-bottom: 0;
+        }
         @media (min-width: 500px) {
-            font-size: 5em;
+            font-size: 4.6em;
         }
     }
     .home-text-power {
         font-size: 8em;
+        $min-width: 170px;
+        $font-size: 2.5em;
+        @while $min-width < 500px {
+            @media (min-width: #{$min-width}){
+                font-size: #{$font-size};
+            }
+          $min-width: $min-width + 30px;
+          $font-size: $font-size + 0.4em;
+        }
+        @media (min-width: 500px) {
+            font-size: 8.5em;
+        }
+        @media (max-width: 500px) {
+            margin-top: 0;
+        }
     }
 }
 
