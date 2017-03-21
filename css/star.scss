@@ -530,8 +530,8 @@ body {
             }
             &.line-right {
                 // right: 5.3%;
-                $min-width: 250px;
-                $right: 11.7%;
+                $min-width: 270px;
+                $right: 11.2%;
                 @while $min-width < 450px {
                     @media (min-width: #{$min-width}){
                         right: #{$right};
@@ -803,18 +803,26 @@ body {
     .send-request input {
         background: transparent;
         border: none;
-        padding: 30px 8% 30px 8%;
+        padding: 30px 5% 30px 5%;
         color: white;
         text-transform: uppercase;
         text-decoration: none;
-        font-size: 1.8rem;
+        font-size: 1.3em;
         font-family: "MyriadPro-Regular";
         cursor: pointer;
         outline:none;
+        @media (max-width: 368px) {
+            font-size: 0.8em;
+        }
         &:active, &:hover, &:focus {
             color: #f9d944;
         }
     }
+    // .send-request-disign {
+    //     &.left-side-block, &.right-side-block {
+    //         width: 4.5%;
+    //     }
+    // }
     .my-contact-footer {
         display: flex;
         flex-direction: column;
