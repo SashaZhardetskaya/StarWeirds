@@ -57,6 +57,10 @@ $(document).ready(function(){ //services traingle rotation
 /* ANCHORS	*/
 
 $(document).ready(function(){  //anchors
+$('.send-request-nav a').click(function(){
+var contacts = $('.contacts').offset().top;
+$('body').animate({scrollTop:contacts},880);
+});
 $('a .nav-email-icon').click(function(){
 	var contactsIcon = $('.contacts').offset().top;
 	$('body').animate({scrollTop:contactsIcon},880);
