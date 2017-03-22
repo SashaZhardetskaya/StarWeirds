@@ -8818,14 +8818,17 @@ body {
       border-radius: 0%;
       color: white;
       text-align: center; }
-  .questions .question-pic {
-    height: 110vh;
-    background: url(../img/question.png) 110% 50% no-repeat;
-    -webkit-background-size: 60%;
-    -moz-background-size: 60%;
-    -ms-background-size: 60%;
-    -o-background-size: 60%;
-    background-size: 60%; }
+  .questions.question-pic {
+    background: url(../img/question.png) 110% 90% no-repeat;
+    -webkit-background-size: 20%;
+    -moz-background-size: 20%;
+    -ms-background-size: 20%;
+    -o-background-size: 20%;
+    background-size: 20%; }
+    @media (max-width: 768px) {
+      .questions.question-pic {
+        background-attachment: fixed;
+        background-position: 110% 50%; } }
 
 .panel-group .panel-heading + .panel-collapse > .panel-body {
   border-top: 1px solid rgba(249, 217, 68, 0.2); }

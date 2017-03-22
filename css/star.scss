@@ -681,13 +681,18 @@ body {
             // border-bottom: solid 1px #f9d944;
         }
     }
-    .question-pic { // переделать, возможно в общий контейнер
-        height: 110vh;
-        // width: 100%;
+    &.question-pic { // переделать, возможно в общий контейнер
+        // height: 110vh;
+        // height: 100%; 
+        // width: 20%;
+        // height: auto;
         // padding: 0;
-        // background-attachment: fixed;
-        background: url(../img/question.png) 110% 50% no-repeat;
-        @include background-size (60%);
+        background: url(../img/question.png) 110% 90% no-repeat;
+        @include background-size (20%);
+        @media (max-width: 768px) {
+            background-attachment: fixed;
+            background-position: 110% 50%;
+        }
         // overflow: hidden;
     }
 }
@@ -834,12 +839,6 @@ body {
         }
     }
 }
-
-
-
-
-
-
 
 
 
