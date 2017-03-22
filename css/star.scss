@@ -687,7 +687,7 @@ body {
         // width: 20%;
         // height: auto;
         // padding: 0;
-        background: url(../img/question.png) 110% 90% no-repeat;
+        background: url(../img/question.png) 110% 70% no-repeat;
         @include background-size (20%);
         @media (max-width: 768px) {
             background-attachment: fixed;
