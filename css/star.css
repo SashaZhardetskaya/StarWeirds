@@ -8192,6 +8192,9 @@ body {
     @media (max-width: 368px) {
       .send-request a {
         font-size: 0.8em; } }
+    @media (min-width: 1810px) {
+      .send-request a {
+        font-size: 2em; } }
     .send-request a:active, .send-request a:hover, .send-request a:focus {
       color: #f9d944; }
   .send-request .send-request-disign {

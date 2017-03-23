@@ -429,6 +429,9 @@ body {
         @media (max-width: 368px) {
             font-size: 0.8em;
         }
+        @media (min-width: 1810px) {
+            font-size: 2em;
+        }
         &:active, &:hover, &:focus {
             color: #f9d944;
         }
