@@ -506,6 +506,9 @@ body {
         color: white;
         font-family: 'MyriadPro-Regular';
         font-size: 1.6rem;
+        @media (min-width: 1810px) {
+            font-size: 1.6em;
+        }
         &:hover, &:active, &:focus {
             color: #f9d944;
         }
@@ -515,6 +518,9 @@ body {
         color: white;
         font-family: 'MyriadPro-Regular';
         font-size: 1.6rem;
+        @media (min-width: 1810px) {
+            font-size: 1.6em;
+        }
         &:hover, &:active, &:focus {
             color: #f9d944;
         }

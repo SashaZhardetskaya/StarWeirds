@@ -8257,6 +8257,9 @@ body {
     color: white;
     font-family: 'MyriadPro-Regular';
     font-size: 1.6rem; }
+    @media (min-width: 1810px) {
+      .price .price-name {
+        font-size: 1.6em; } }
     .price .price-name:hover, .price .price-name:active, .price .price-name:focus {
       color: #f9d944; }
   .price .price-number {
@@ -8264,6 +8267,9 @@ body {
     color: white;
     font-family: 'MyriadPro-Regular';
     font-size: 1.6rem; }
+    @media (min-width: 1810px) {
+      .price .price-number {
+        font-size: 1.6em; } }
     .price .price-number:hover, .price .price-number:active, .price .price-number:focus {
       color: #f9d944; }
   .price hr {
