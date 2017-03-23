@@ -359,6 +359,9 @@ body {
             font-size: 1.2em;
             text-decoration: none;
             cursor: pointer;
+            @media (min-width: 1810px) {
+                font-size: 2.2em;
+            }
             &:hover, &:active, &:focus{
                 color: #f9d944;
                 @include transition-duration (0.3s);
@@ -369,6 +372,9 @@ body {
             text-align: center;
             font-family: 'MyriadPro-Regular';
             font-size: 1.1em;
+            @media (min-width: 1810px) {
+                font-size: 2em;
+            }
     	}
         .service-block {
             a {

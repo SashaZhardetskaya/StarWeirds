@@ -8113,6 +8113,9 @@ body {
       font-size: 1.2em;
       text-decoration: none;
       cursor: pointer; }
+      @media (min-width: 1810px) {
+        .service .service-row .service-name {
+          font-size: 2.2em; } }
       .service .service-row .service-name:hover, .service .service-row .service-name:active, .service .service-row .service-name:focus {
         color: #f9d944;
         -webkit-transition-duration: 0.3s;
@@ -8125,6 +8128,9 @@ body {
       text-align: center;
       font-family: 'MyriadPro-Regular';
       font-size: 1.1em; }
+      @media (min-width: 1810px) {
+        .service .service-row .service-description {
+          font-size: 2em; } }
     .service .service-row .service-block a {
       cursor: pointer;
       text-decoration: none; }
