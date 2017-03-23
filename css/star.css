@@ -8032,6 +8032,9 @@ body {
     @media (min-width: 500px) {
       .home-page-content h1 {
         font-size: 4.6em; } }
+    @media (min-width: 1810px) {
+      .home-page-content h1 {
+        font-size: 8.3em; } }
   .home-page-content .home-text-power {
     font-size: 8em; }
     @media (min-width: 170px) {
@@ -8073,6 +8076,10 @@ body {
     @media (max-width: 500px) {
       .home-page-content .home-text-power {
         margin-top: 0; } }
+    @media (min-width: 1810px) {
+      .home-page-content .home-text-power {
+        margin-top: 3.2%;
+        font-size: 15.5em; } }
 
 .service {
   width: 100%;
@@ -8788,7 +8795,10 @@ body {
   width: 100%; }
   .questions .questions-block {
     width: 60%;
-    margin: 20% 10% 0 30%; }
+    margin: 20% 10% 20% 30%; }
+    @media (max-width: 768px) {
+      .questions .questions-block {
+        margin: 20% 10% 20% 15%; } }
   .questions .question-form {
     margin: 0 0 50px 0;
     color: white;
