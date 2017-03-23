@@ -446,97 +446,27 @@ body {
             }
             &.circle-left {
                 position: relative;
-                right: 6%;
-                @media (min-width: 1950px) {
-                    right: 6.5%;
-                }
+                right: 9.5%;
             }
             &.circle-right {
                 position: relative;
-                right: -6%;
-                @media (min-width: 1950px) {
-                    right: -6.5%;
-                }
+                right: -9.5%;
             }
         }
         &.horizontal-line {
             display: inline-block;
             position: relative;
             top: -4px;
-            width: 11%;
+            width: 10%;
             border-color: #f9d944;
             @media (max-width: 275px) {
                 display: none;
             }
             &.line-right {
-                // right: 5.3%;
-                $min-width: 270px;
-                $right: 11.2%;
-                @while $min-width < 450px {
-                    @media (min-width: #{$min-width}){
-                        right: #{$right};
-                    }
-                  $min-width: $min-width + 20px;
-                  $right: $right - 0.4%;
-                }
-                $min-width: 450px;
-                $right: 8%;
-
-                @while $min-width < 950px {
-                    @media (min-width: #{$min-width}){
-                        right: #{$right};
-                    }
-                  $min-width: $min-width + 20px;
-                  $right: $right - 0.09%;
-                }
-
-                $min-width: 950px;
-                $right: 5.7%;
-                @while $min-width < 3200px {
-                    @media (min-width: #{$min-width}){
-                        right: #{$right};
-                    }
-                  $min-width: $min-width + 50px;
-                  $right: $right - 0.03%;
-                }
-                @media (min-width: 3200px) {
-                    width: 4.5%;
-                }
+                right: 16px;
             }
             &.line-left {
-                // left: 5.3%;
-                $min-width: 250px;
-                $left: 11.7%;
-                @while $min-width < 450px {
-                    @media (min-width: #{$min-width}){
-                        left: #{$left};
-                    }
-                  $min-width: $min-width + 20px;
-                  $left: $left - 0.4%;
-                }
-                $min-width: 450px;
-                $left: 8%;
-
-                @while $min-width < 950px {
-                    @media (min-width: #{$min-width}){
-                        left: #{$left};
-                    }
-                  $min-width: $min-width + 20px;
-                  $left: $left - 0.09%;
-                }
-
-                $min-width: 950px;
-                $left: 5.7%;
-                @while $min-width < 3200px {
-                    @media (min-width: #{$min-width}){
-                        left: #{$left};
-                    }
-                  $min-width: $min-width + 50px;
-                  $left: $left - 0.03%;
-                }
-                @media (min-width: 3200px) {
-                    width: 4.5%;
-                }
+                left: 16px;
             }
         }
         &.left-side-block, &.right-side-block {
@@ -549,11 +479,11 @@ body {
         }
         &.left-side-block {
             border-right: transparent;
-            left: 4%;
+            left: 0;
         }
         &.right-side-block {
             border-left: transparent;
-            right: 4%;
+            right: 0;
         }
     }
 }
