@@ -525,6 +525,22 @@ body {
             color: #f9d944;
         }
     }
+    .present {
+        display: inline-block; 
+        position: relative; 
+    }
+    .present:hover::after {
+        content: attr(data-title); 
+        position: absolute; 
+        left: 30%; top: 90%; 
+        z-index: 1; 
+        background: rgba(0, 0, 0, 0.62); 
+        font-family: 'MyriadPro-Regular'; 
+        font-size: 1em;
+        padding: 5px 10px; 
+        border: 1px solid #e1c43d; 
+        width: 200px;
+    }
     hr {
         display: inline-block;
         width: 40%;
