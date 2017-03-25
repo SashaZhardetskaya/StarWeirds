@@ -496,16 +496,24 @@ body {
     margin: 0;
     padding-top: 5%;
     // height: 100vh;
-    text-align: center;
+    // text-align: center;
     color: white;
     .price-row {
         margin: 3% 0 1% 0;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
     }
     .price-name {
-        display: inline-block;
+        display: block;
+        margin:-2px -20px 0 0;
         color: white;
         font-family: 'MyriadPro-Regular';
         font-size: 1.6rem;
+        text-align: right;
+        @media (max-width: 768px) {
+            text-align: center;
+        }
         @media (min-width: 1810px) {
             font-size: 1.6em;
         }
@@ -518,6 +526,7 @@ body {
         color: white;
         font-family: 'MyriadPro-Regular';
         font-size: 1.6rem;
+        // text-align: right;
         @media (min-width: 1810px) {
             font-size: 1.6em;
         }
@@ -543,16 +552,16 @@ body {
     }
     hr {
         display: inline-block;
-        width: 40%;
-        @media (max-width: 760px) {
-            width: 25%;
-        }
-        @media (max-width: 500px) {
-            width: 15%;
-        }
-        @media (max-width: 430px) {
-            display: none;
-        }
+        width: 100%;
+        // @media (max-width: 760px) {
+        //     width: 25%;
+        // }
+        // @media (max-width: 500px) {
+        //     width: 15%;
+        // }
+        // @media (max-width: 430px) {
+        //     display: none;
+        // }
         margin: 0 12px 3px 12px;
         border-color: transparent;
         color: transparent;

@@ -8248,15 +8248,22 @@ body {
 .price {
   margin: 0;
   padding-top: 5%;
-  text-align: center;
   color: white; }
   .price .price-row {
     margin: 3% 0 1% 0; }
+    @media (max-width: 768px) {
+      .price .price-row {
+        text-align: center; } }
   .price .price-name {
-    display: inline-block;
+    display: block;
+    margin: -2px -20px 0 0;
     color: white;
     font-family: 'MyriadPro-Regular';
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    text-align: right; }
+    @media (max-width: 768px) {
+      .price .price-name {
+        text-align: center; } }
     @media (min-width: 1810px) {
       .price .price-name {
         font-size: 1.6em; } }
@@ -8289,22 +8296,13 @@ body {
     width: 200px; }
   .price hr {
     display: inline-block;
-    width: 40%;
+    width: 100%;
     margin: 0 12px 3px 12px;
     border-color: transparent;
     color: transparent;
     background-color: transparent;
     cursor: pointer;
     border-bottom: 2px dashed rgba(249, 217, 68, 0.7); }
-    @media (max-width: 760px) {
-      .price hr {
-        width: 25%; } }
-    @media (max-width: 500px) {
-      .price hr {
-        width: 15%; } }
-    @media (max-width: 430px) {
-      .price hr {
-        display: none; } }
     .price hr:hover, .price hr:active, .price hr:focus {
       border-bottom: 2px dashed #f9d944; }
   .price .triangle-price {
