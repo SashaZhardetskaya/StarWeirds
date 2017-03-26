@@ -58,15 +58,15 @@ $(document).ready(function(){ //services traingle rotation
 
 $(document).ready(function(){  //anchors
 $('.send-request-nav a').click(function(){
-var contacts = $('.contacts').offset().top;
-$('body').animate({scrollTop:contacts},880);
+	var contacts = $('.contacts').offset().top-80;
+	$('body').animate({scrollTop:contacts},880);
 });
 $('a .nav-email-icon').click(function(){
-	var contactsIcon = $('.contacts').offset().top;
+	var contactsIcon = $('.contacts').offset().top-80;
 	$('body').animate({scrollTop:contactsIcon},880);
 });
 $('a .nav-phone-icon').click(function(){
-	var contactsIcon = $('.contacts').offset().top;
+	var contactsIcon = $('.contacts').offset().top-80;
 	$('body').animate({scrollTop:contactsIcon},880);
 });
 
@@ -83,15 +83,15 @@ $('.nav-to-questions').click(function(){
 	$('body').animate({scrollTop:questions},880);
 });
 $('.nav-to-contact').click(function(){
-	var contacts = $('.contacts').offset().top;
+	var contacts = $('.contacts').offset().top-80;
 	$('body').animate({scrollTop:contacts},880);
 });
 $('.send-request a').click(function(){
-	var contacts = $('.contacts').offset().top;
+	var contacts = $('.contacts').offset().top-80;
 	$('body').animate({scrollTop:contacts},880);
 });
 $('.send-request-price a').click(function(){
-	var contacts = $('.contacts').offset().top;
+	var contacts = $('.contacts').offset().top-80;
 	$('body').animate({scrollTop:contacts},880);
 });
 
