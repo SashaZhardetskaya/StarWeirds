@@ -131,7 +131,7 @@ body {
             text-decoration: none;
             &:hover, &:active, &:focus{ //возможно убрать фокус
                 color: transparentize(#f9d944,.3);
-                font-size: 2.2rem;
+                font-size: 1.7rem;
                 @include transition-duration (0.7s);
             }
         }
