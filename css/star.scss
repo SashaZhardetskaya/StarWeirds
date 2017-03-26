@@ -113,7 +113,7 @@ body {
     @media (min-width: 1810px) {
         font-size: 2.5rem;
     }
-    @include transition-duration (2s);
+    @include transition-duration (0.6s);
     nav {
         height: 100%;
         width: 100%;
