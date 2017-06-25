@@ -96,3 +96,55 @@ $('.send-request-price a').click(function(){
 });
 
 });
+
+
+
+$(document).ready(function(){
+    //AJAX form
+    function sendMess() {
+        event.preventDefault();
+        $.post(
+            "http://starweirds.in.ua:3000/contact",
+            {
+                "name": $('.user-contact.name').val(),
+                "phone": $('.user-contact.name').val(),
+                "email": $('.user-contact.name').val(),
+                "comment": $('.user-contact.name').val()
+            },
+            function (data){
+                if (data==1){
+                    $('#send-res').html('Success!');
+                    $('#myModal').modal('show');
+                    setTimeout(function(){
+                        $('#myModal').modal('hide');
+                    }, 3000);
+
+                }
+                else {
+                    $('#send-res').html('Try again');
+                    $('#myModal').modal('show');
+                }
+            }
+        );
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
