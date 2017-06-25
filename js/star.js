@@ -101,6 +101,7 @@ $('.send-request-price a').click(function(){
 
 $(document).ready(function(){
     //AJAX form
+    // $('.form--submit-button').on('click', sendMess());
     function sendMess() {
         event.preventDefault();
         $.post(
