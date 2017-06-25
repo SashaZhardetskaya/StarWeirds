@@ -8324,7 +8324,7 @@ body {
           font-size: 0.7em; } }
       @media (max-width: 768px) {
         .price .send-request-price a {
-          padding: 14px 0 14px 0; } }
+          padding: 20px 38px 20px 38px; } }
     .price .send-request-price .send-request-disign.left-side-block, .price .send-request-price .send-request-disign.right-side-block {
       width: 22%; }
     .price .send-request-price .send-request-disign.left-side-block {

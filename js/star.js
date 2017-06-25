@@ -101,8 +101,10 @@ $('.send-request-price a').click(function(){
 
 $(document).ready(function(){
     //AJAX form
-    // $('.form--submit-button').on('click', sendMess());
-    function sendMess() {
+    $('.form--submit-button').on('click', function (event) {
+
+    // }
+    // function sendMess(event) {
         event.preventDefault();
         $.post(
             "http://starweirds.in.ua:3000/contact",
@@ -113,21 +115,22 @@ $(document).ready(function(){
                 "comment": $('.contact-textarea.comment').val()
             },
             function (data){
-                if (data==1){
+            	console.log(data);
+                if (data.message == "Success"){
                     // $('#send-res').html('Success!');
                     // $('#myModal').modal('show');
                     // setTimeout(function(){
                     //     $('#myModal').modal('hide');
                     // }, 3000);
-					alert('good');
 
+					alert('Спасибо за Вашу заявку. Скоро мы свяжемся с Вами');
                 }
                 else {
                     alert('try again');
                 }
             }
         );
-    }
+    });
 });
 
 

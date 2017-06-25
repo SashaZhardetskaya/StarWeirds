@@ -607,7 +607,7 @@ body {
                 font-size: 0.7em;
             }
             @media (max-width: 768px) {
-                padding: 14px 0 14px 0;
+                padding: 20px 38px 20px 38px;
             }
         }
         .send-request-disign{
@@ -935,7 +935,11 @@ body {
   animation: scroll 30s linear 0s infinite;
 }
 @keyframes scroll {
-  0% { top: 100%; }
-  100% { top: 0%; }
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
 }
 
