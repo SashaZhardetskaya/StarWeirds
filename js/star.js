@@ -107,22 +107,22 @@ $(document).ready(function(){
             "http://starweirds.in.ua:3000/contact",
             {
                 "name": $('.user-contact.name').val(),
-                "phone": $('.user-contact.name').val(),
-                "email": $('.user-contact.name').val(),
-                "comment": $('.user-contact.name').val()
+                "phone": $('.user-contact.phone').val(),
+                "email": $('.user-contact.email').val(),
+                "comment": $('.contact-textarea.comment').val()
             },
             function (data){
                 if (data==1){
-                    $('#send-res').html('Success!');
-                    $('#myModal').modal('show');
-                    setTimeout(function(){
-                        $('#myModal').modal('hide');
-                    }, 3000);
+                    // $('#send-res').html('Success!');
+                    // $('#myModal').modal('show');
+                    // setTimeout(function(){
+                    //     $('#myModal').modal('hide');
+                    // }, 3000);
+					alert('good');
 
                 }
                 else {
-                    $('#send-res').html('Try again');
-                    $('#myModal').modal('show');
+                    alert('try again');
                 }
             }
         );
